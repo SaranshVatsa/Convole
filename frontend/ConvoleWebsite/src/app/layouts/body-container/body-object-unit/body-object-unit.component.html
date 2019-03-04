@@ -1,0 +1,50 @@
+<div class="link_unit_container" *ngIf="render === true" [ngStyle]="{boxShadow: box_shadow == true ? '0 3px 3px 0 rgba(119, 119, 119, 0.07)' : 'none'}">
+  <div class="link_unit_content left" [ngStyle]="{border: box_shadow == true ? 'none' : '0.5px solid rgb(214, 214, 214)'}">
+    <div class="link_unit_content_sharedBy">
+      Shared by <div class="link_unit_sharedBy_name" routerLink="/@{{postUser}}">{{ postUser }}</div>
+      <div class="link_unit_sharedBy_name" *ngIf="communityName"> on
+        <div class="link_unit_sharedBy_name" routerLink="/{{communityName}}/all">{{ communityName }}</div>/
+        <div class="link_unit_sharedBy_name" routerLink="/{{communityName}}/{{columnUrl}}">{{ columnName }}</div>
+      </div>
+    </div>
+    <div class="link_unit_content_title">{{ postTitle}}</div>
+    <div class="link_unit_content_body">{{ postDescription }}
+    </div>
+    <div class="object_unit_rating_review">
+      <div class="object_unit_rating left">{{averageReviews}} Average Rating</div>
+      <div class="object_unit_review right">{{totalReviews}} Reviews</div>
+    </div>
+    <div class="link_unit_footer">
+      <div class="object_unit_reviews" [ngClass]="{activity_selected: reviewed === true}">
+        <img src="../../../../assets/images/star_icon.png" height="17" width="19" class="star_icon">
+        <span class="link_unit_like_text">Reviews</span>
+      </div>
+      <div class="object_unit_share" [ngClass]="{activity_selected: share === true}" (click)="shareClicked($event)">
+        <img src="../../../../assets/images/share_icon.png" height="18" width="20" class="like_icon">
+        <span class="link_unit_like_text">Share({{postShareCount}})</span>
+        <div class="share_tooltip_object" *ngIf="shareTooltipStatus">
+          <div class="right_share_twitter">
+            <a href="https://twitter.com/share?url=www.convole.com/home/post/{{linkToPost}}&text=" target="_blank">
+              <img src="../../../../assets/images/twitter_icon.png" height="28" width="28">
+            </a>
+          </div>
+          <div class="right_share_facebook">
+            <a href="http://www.facebook.com/sharer.php?u=www.convole.com/home/post/{{linkToPost}}" target="_blank">
+              <img src="../../../../assets/images/facebook_icon.png" height="28" width="28">
+            </a>
+          </div>
+          <div class="right_share_google">
+            <a href="https://plus.google.com/share?url=www.convole.com/home/post/{{linkToPost}}" target="_blank">
+              <img src="../../../../assets/images/google_plus_icon.png" height="28" width="28">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="object_unit_report" [ngClass]="{activity_selected: report === true}">
+        <img src="../../../../assets/images/report_icon.png" height="19" width="23" class="like_icon">
+        <span class="link_unit_like_text">Report({{postReportCount}})</span>
+      </div>
+    </div>
+  </div>
+  <div class="link_unit_pic right"></div>
+</div>

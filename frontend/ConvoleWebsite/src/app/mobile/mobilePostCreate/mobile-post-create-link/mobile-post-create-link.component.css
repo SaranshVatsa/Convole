@@ -1,0 +1,112 @@
+.mobile_post_create_page{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+
+
+.mobile_post_create_header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px 5px 10px;
+  box-shadow: 0 3px 13px 0 rgba(48, 48, 48, 0.15);
+  box-sizing: border-box;
+}
+.mobile_post_create_header_title{
+  font-size: 17px;
+  font-family: "Roboto-Regular";
+  color: rgb(74, 75, 75);
+  margin-left: 20px;
+  width: 200px;
+  float: left;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.mobile_post_create_header_back{
+  margin: 10px 0 0 10px;
+  float: left;
+  cursor: pointer;
+}
+
+.post_create_link_container{
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+  z-index: 4;
+  margin-top: 50px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.post_create_link_enter{
+  margin-top: 20px;
+  font-size: 26px;
+  font-family: "Roboto-Bold";
+  color: rgb(175, 175, 175);
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.8px;
+  margin-bottom: 40px;
+}
+
+.post_create_link_enter:focus {
+  color: rgb(147,147,147);
+}
+
+.post_create_link_submit{
+  border-radius: 3px;
+  background-color: rgb(76, 137, 252);
+  width: 110px;
+  height: 25px;
+  margin: 10px auto;
+  font-size: 12px;
+  font-family: "Roboto-Light";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.post_create_link_text{
+  width: 100%;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.post_create_link_text_title{
+  font-size: 16px;
+  font-family: "Roboto-Medium";
+  color: rgb(147, 147, 147);
+  margin-bottom: 10px;
+}
+
+.post_create_link_text_line{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(147, 147, 147);
+  line-height: 18px;
+  height: 18px;
+}
+
+.community_dropdown{
+  background: transparent;
+  border: 1px solid rgb(147, 147, 147);
+  font-size: 14px;
+  height: 29px;
+  padding: 5px;
+  width: 268px;
+  margin-bottom: 20px;
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+}

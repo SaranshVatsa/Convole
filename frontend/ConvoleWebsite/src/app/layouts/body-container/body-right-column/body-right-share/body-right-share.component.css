@@ -1,0 +1,43 @@
+.right_share_container{
+  width: 100%;
+  height: auto;
+}
+
+.right_share_title{
+  font-size: 16.8px;
+  font-family: "Roboto-Medium";
+  color: rgb(79, 77, 77);
+  line-height: 1.2;
+  margin-top: 30px;
+}
+
+.right_share_line{
+  font-size: 14px;
+  color: rgb(70, 70, 70);
+  line-height: 15px;
+  margin-top: 10px;
+}
+
+.right_share_links{
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.right_share_twitter{
+  width: 35px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.right_share_facebook{
+  width: 35px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.right_share_google{
+  width: 35px;
+  display: inline-block;
+  cursor: pointer;
+}

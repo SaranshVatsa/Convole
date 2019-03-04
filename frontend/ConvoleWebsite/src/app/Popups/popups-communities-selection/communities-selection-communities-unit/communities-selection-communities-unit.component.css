@@ -1,0 +1,29 @@
+.communities_selection_communities_unit{
+  border-radius: 2px;
+  width: 125px;
+  height: 70px;
+  text-align: center;
+  margin: 5px;
+  display: inline-block;
+  z-index: 5;
+}
+
+.communities_selection_communities_unit_cover{
+  position: relative;
+  top: -92px;
+  left:0;
+  z-index: 4;
+  width: 126px;
+  height: 70px;
+}
+.communities_selection_communities_unit_image{
+  opacity: 0.9;
+  z-index: 6;
+}
+
+.communities_selection_communities_unit_text{
+  position: relative;
+  top: -45px;
+  color: #ffffff;
+}
+

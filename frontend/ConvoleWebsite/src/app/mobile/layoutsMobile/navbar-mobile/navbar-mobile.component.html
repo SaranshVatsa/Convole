@@ -1,0 +1,17 @@
+<div class="header_container">
+  <div class="left" routerLink="/home">
+    <img src="../../../../assets/images/convole_logo_full.png" class="logo_navbar left"/>
+    <span class="navbar_beta right">Beta</span>
+    <span class="navbar_title right">Convole</span>
+  </div>
+  <div class="navbar_right right" *ngIf="routeName.includes('home') || routeName.includes('@')">
+    <img src="../../../../assets/images/notification_icon_25by24.jpg" height="16" width="15"
+         class="notificationIconNavbar left">
+    <img src="../../../../assets/images/notification_icon_25by24.jpg" height="16" width="15"
+         class="notificationIconNavbar left">
+    <div class="navbar_profile_pic right" routerLink="/@{{userNameLoggedIn}}"></div>
+  </div>
+  <div class="navbar_right_button right" *ngIf="!routeName.includes('@')" (click)="loginOpen()">
+    Login/SignUp
+  </div>
+</div>

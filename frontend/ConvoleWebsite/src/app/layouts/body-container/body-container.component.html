@@ -1,0 +1,37 @@
+<div class="full_container">
+<div class="body_container">
+  <app-body-top-home *ngIf="!routeName.includes('@') || currRoute.includes('/home')"></app-body-top-home>
+  <app-body-top-profile *ngIf="routeName.includes('@')"></app-body-top-profile>
+  <app-body-common-unit
+      *ngFor="let post of postData"
+      [post]="post"
+      [postAndUserData]="postAndUserData"
+      [communityName]="communityName"
+      (click)="onUnitClick(post)"></app-body-common-unit>
+  <app-post-loader-unit *ngIf="!postLoaded"></app-post-loader-unit>
+  <!--<app-body-contributions-unit></app-body-contributions-unit>-->
+  <div class="show_more">-----Show More Form Tutorial Column------</div>
+  <app-post-open-container
+      [postOpenStatus]="unitClicked"
+      [openedUnit]="clickedUnit"
+      (postOpenStatusChange)="unitClosed()"
+      *ngIf="unitClicked === true"
+      [post]="postSingle"
+      [postAndUserData]="postAndUserData"
+      [communityName]="communityName"
+      [oldURL]="oldURL"
+      [allPosts]="postData"></app-post-open-container>
+</div>
+  <app-body-right-column></app-body-right-column>
+  <div class="add_post_button" id="add_post_button" (click)="showPostCreateOptions()" [@rotatedState]='state'>+</div>
+  <div class="add_post_options" *ngIf="postCreateOptionsStatus == true">
+    <div class="add_post_option_single" id="add_post_options_link" (click)="openPostCreate($event)">L</div>
+    <div class="add_post_option_single" id="add_post_options_discussion" (click)="openPostCreate($event)">D</div>
+    <div class="add_post_option_single" id="add_post_options_event" (click)="openPostCreate($event)">E</div>
+    <div class="add_post_option_single" id="add_post_options_object" (click)="openPostCreate($event)">O</div>
+  </div>
+  <app-post-create-link *ngIf="postCreateType === 'link'"></app-post-create-link>
+  <app-post-create-discussion *ngIf="postCreateType === 'discussion'"></app-post-create-discussion>
+  <app-post-create-event *ngIf="postCreateType === 'event'"></app-post-create-event>
+  <app-post-create-object *ngIf="postCreateType === 'object'"></app-post-create-object>
+</div>

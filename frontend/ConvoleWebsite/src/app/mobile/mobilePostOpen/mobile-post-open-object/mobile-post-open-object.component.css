@@ -1,0 +1,115 @@
+.object_unit_share{
+  margin-right: 20px !important;
+}
+
+.object_rating_container{
+  width: 100%;
+  height: 110px;
+  margin-top: 30px;
+}
+
+.object_rating_container_left{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: rgb(76, 137, 252);
+  display: inline-block;
+  margin-top: 20px;
+  float: left;
+}
+
+.object_rating_container_left_score{
+  font-size: 24px;
+  font-family: "Roboto-Medium";
+  border-bottom: 1px solid rgb(76, 137, 252);
+}
+
+.object_rating_container_left_number{
+  font-size: 9px;
+  font-family: Roboto-Regular;
+  margin-top: 3px;
+}
+
+.object_rating_container_right{
+  width: 70%;
+  height: 50px;
+  display: inline-block;
+  float: right;
+  min-width: 210px;
+}
+
+.object_rating_container_right_great{
+  width: 100%;
+  height: 15px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.object_rating_container_right_great_title{
+  width: 25px;
+  color: rgb(76, 137, 252);
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  float: left;
+}
+
+.object_rating_container_right_great_bar{
+  border-radius: 10px;
+  background-color: rgb(215, 215, 215);
+  width: 50%;
+  height: 10px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.object_rating_container_right_great_bar_blue{
+  background-color: rgb(76, 137, 252);
+  height: 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+
+.object_rating_container_right_great_reviews{
+  font-size: 10px;
+  font-family: "Roboto-Light";
+  color: rgb(139, 138, 138);
+  margin-left: 5px;
+  float: left;
+}
+
+.radio{
+  font-size: 10px;
+  font-family: "Roboto";
+  color: rgb(84, 84, 84);
+  display: inline-block;
+  line-height: 15px;
+}
+
+input[type=radio]{
+  margin-bottom: -2px;
+  vertical-align: middle;
+}
+
+.radio_input{
+  line-height: 12px;
+  margin-top: -5px;
+}
+
+.post_open_add_comment_radio{
+  height: 15px;
+  width: 100%;
+}
+
+.share_tooltip_object{
+  position: absolute;
+  box-shadow: 0 3px 3px 0 rgba(119, 119, 119, 0.07);
+  width: 140px;
+  height: 40px;
+  top: 25px;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  box-sizing: border-box;
+  padding: 7.5px 15px;
+}

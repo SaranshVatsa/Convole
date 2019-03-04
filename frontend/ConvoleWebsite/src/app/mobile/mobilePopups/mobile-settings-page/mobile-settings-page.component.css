@@ -1,0 +1,273 @@
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+.mobile_feedback_page{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+
+
+.mobile_feedback_header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px 5px 10px;
+  box-shadow: 0 3px 13px 0 rgba(48, 48, 48, 0.15);
+  box-sizing: border-box;
+}
+.mobile_feedback_header_title{
+  font-size: 17px;
+  font-family: "Roboto-Regular";
+  color: rgb(74, 75, 75);
+  margin-left: 20px;
+  width: 100px;
+  float: left;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.mobile_feedback_header_back{
+  margin: 10px 0 0 10px;
+  float: left;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.popups_settings_main_container{
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+  z-index: 4;
+  margin-top: 50px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+
+.popups_settings_account_info{
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+
+.popups_settings_account_info_title{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(69, 69, 69);
+  font-weight: bold;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 0.5px solid rgba(160, 160, 160, 0.5);
+}
+
+.popups_settings_email{
+  margin: 10px 0 20px 15px;
+  width: 100%;
+  height: auto;
+}
+
+.popups_settings_email_title{
+  font-size: 12px;
+  font-family: "Roboto-Regular";
+  color: rgb(69, 69, 69);
+}
+
+.popups_settings_email_address{
+  margin-left: 30px;
+  font-size: 11px;
+  font-family: "Roboto-Regular";
+  color: rgb(69, 69, 69);
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.popups_settings_edit_email{
+  border-radius: 3px;
+  background-color: rgb(76, 137, 252);
+  box-shadow: 0px 7px 10px 0px rgba(76, 137, 252, 0.1);
+  width: 70px;
+  height: 25px;
+  font-size: 10px;
+  font-family: "Roboto-Light";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+  margin-top: -25px;
+  margin-right: 10px;
+}
+
+
+
+
+.popups_settings_username{
+  margin: 10px 0 20px 15px;
+  width: 100%;
+  height: auto;
+}
+
+.popups_settings_username_title{
+  font-size: 12px;
+  font-family: "Roboto-Regular";
+  color: rgb(69, 69, 69);
+}
+
+.popups_settings_username_name{
+  margin-left: 30px;
+  font-size: 11px;
+  font-family: "Roboto-Regular";
+  color: rgb(69, 69, 69);
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.popups_settings_edit_username{
+  border-radius: 3px;
+  background-color: rgb(76, 137, 252);
+  box-shadow: 0px 7px 10px 0px rgba(76, 137, 252, 0.1);
+  width: 100px;
+  height: 25px;
+  font-size: 10px;
+  font-family: "Roboto-Light";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+  margin-top: -25px;
+  margin-right: 10px;
+}
+
+.popups_settings_notifications{
+  width: 100%;
+  margin: 10px auto;
+  height: auto;
+}
+
+.popups_settings_notifications_title{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(69, 69, 69);
+  font-weight: bold;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 0.5px solid rgba(160, 160, 160, 0.5);
+}
+
+.popups_settings_notifications_line1{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(69, 69, 69);
+  margin: 40px 0 0 5px;
+  font-weight: 600;
+}
+
+.popups_settings_notifications_line2{
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(155, 153, 153);
+  margin: 30px 0 0 5px;
+  width: 60%;
+}
+
+.popups_settings_notifications_line_extra{
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(69, 69, 69);
+  margin: 30px 0 0 5px;
+}
+
+.popup_settings_indented{
+  margin-left: 20px;
+}
+
+
+.popups_settings_toggle{
+  width: 80px;
+  height: 20px;
+  margin-top: -30px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.popups_settings_toggle_big{
+  width: 100px;
+  height: 20px;
+  margin-top: -30px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.popups_settings_toggle_on{
+  font-size: 11px;
+  font-family: "Roboto";
+  float: left;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+}
+
+.popups_settings_toggle_off{
+  font-size: 11px;
+  font-family: "Roboto";
+  float: right;
+  text-align: center;
+  border-radius: 0 4px 4px 0;
+}
+
+.selected{
+  background-color: #4c89fc;
+  color: white;
+  line-height: 21px;
+  width: 40px;
+}
+
+.unSelected{
+  background-color: #ffffff;
+  color: #cccccc;
+  border: 0.5px solid #cccccc;
+  line-height: 20px;
+  width: 39px;
+}
+
+.selected_big{
+  background-color: #4c89fc;
+  color: white;
+  line-height: 21px;
+  width: 50px;
+}
+
+.unSelected_big{
+  background-color: #ffffff;
+  color: #cccccc;
+  border: 0.5px solid #cccccc;
+  line-height: 20px;
+  width: 49px;
+}

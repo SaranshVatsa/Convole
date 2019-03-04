@@ -1,0 +1,42 @@
+.left{
+  float: left;
+}
+
+.sidebar_activities_container{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.sidebar_activities_container_title{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(138, 137, 137);
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-left: -5px;
+}
+
+.sidebar_activities_line{
+  width: 100%;
+  height: 30px;
+  padding: 2px 5px 2px 0;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+
+
+.sidebar_text_activities{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(80, 80, 80);
+  cursor: pointer;
+  line-height: 30px;
+}
+
+.add_more_icon{
+  margin-right: 12px;
+  margin-bottom: -4px;
+  cursor: pointer;
+}

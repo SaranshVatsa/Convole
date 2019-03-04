@@ -1,0 +1,18 @@
+<div class="sidebar_anchor" #sidebar_anchor ></div>
+<div class="sidebar_container" #sidebar
+     [ngClass]="{stickTop: stickTop === true,
+     stickBottom: stickBottom === true,
+     unStick: stickTop === false && stickBottom === false}"
+     [style.marginTop.px]="sidebarTopAnchorHeight - 5">
+  <app-sidebar-top *ngIf="routeName.includes('home')"></app-sidebar-top>
+  <app-sidebar-communities *ngIf="routeName.includes('home')"></app-sidebar-communities>
+  <app-sidebar-following *ngIf="routeName.includes('home')"></app-sidebar-following>
+  <app-sidebar-accounts *ngIf="routeName.includes('home')"></app-sidebar-accounts>
+  <app-sidebar-top-communities *ngIf="!routeName.includes('@') && !routeName.includes('home')"></app-sidebar-top-communities>
+  <app-sidebar-columns *ngIf="!routeName.includes('@') && !routeName.includes('home')"></app-sidebar-columns>
+  <app-sidebar-contributions *ngIf="!routeName.includes('@') && !routeName.includes('home')"></app-sidebar-contributions>
+  <app-sidebar-top-profile *ngIf="routeName.includes('@')"></app-sidebar-top-profile>
+  <app-sidebar-activities *ngIf="routeName.includes('@')"></app-sidebar-activities>
+  <div class="sidebar_anchor_bottom" #sidebar_anchor_bottom [ngStyle]="{height: sidebarBottomAnchorHeight + 'px'}"></div>
+  <app-sidebar-bottom></app-sidebar-bottom>
+</div>

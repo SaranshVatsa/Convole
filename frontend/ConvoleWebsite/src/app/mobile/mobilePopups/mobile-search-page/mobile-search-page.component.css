@@ -1,0 +1,101 @@
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+.mobile_feedback_page{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+
+
+.popups_search_main_container{
+
+}
+
+
+.mobile_feedback_header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px 5px 10px;
+  box-shadow: 0 3px 13px 0 rgba(48, 48, 48, 0.15);
+  box-sizing: border-box;
+}
+.mobile_feedback_header_title{
+  font-size: 17px;
+  font-family: "Roboto-Regular";
+  color: rgb(74, 75, 75);
+  margin-left: 20px;
+  width: 100px;
+  float: left;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.mobile_feedback_header_back{
+  margin: 10px 0 0 0;
+  float: left;
+  cursor: pointer;
+}
+
+.mobile_search_cancel{
+  margin: 12.5px 0 12.5px 0;
+  float: right;
+  cursor: pointer;
+}
+
+
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.popups_search_main_container{
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+  z-index: 4;
+  margin-top: 30px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+.searchbar_navbar{
+  width: 85%;
+  left: 20px;
+  margin-top: 3px;
+  height: 30px;
+  position: absolute;
+}
+
+#searchbar_navbar_input{
+  width: 100%;
+  height: 34px;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  margin: auto;
+  padding: 8px 10px 8px 10px;
+  font-size: 16px;
+  font-family: Helvetica;
+  color: rgb(72, 72, 72);
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+

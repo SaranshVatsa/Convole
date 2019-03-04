@@ -1,0 +1,52 @@
+<app-nav-bar class="communities_desktop"></app-nav-bar>
+<div class="main_container communities_desktop"
+     (click)="closePopups($event)"
+     [ngStyle]="{overflow: unitClicked == true ? 'hidden' : 'visible'}" *ngIf="(!plus18 || (plus18 && userPlus18))">
+  <app-sidebar></app-sidebar>
+  <app-body-container></app-body-container>
+  <app-popups-login *ngIf="loginPopupStatus === true"></app-popups-login>
+</div>
+
+<div class="NSFWWarning" *ngIf="communityName && (plus18 && !userLoggedIn)">
+  NSFW Community. Kindly log in to verify your age and view this.</div>
+<div class="NSFWWarning" *ngIf="communityName && (plus18 && (userLoggedIn && !userPlus18))">
+  NSFW Community. You're either below 18 years of age.
+</div>
+<app-navbar-mobile class="communities_mobile"
+                   *ngIf="feedbackPageStatus === false &&
+                   notificationsPageStatus === false &&
+                   settingsPageStatus === false &&
+                   postOpenStatus === false &&
+                   searchOpenStatus === false &&
+                   loginPageStatus === false &&
+                   postCreateType === 'none' && (!plus18 || (plus18 && userPlus18))"></app-navbar-mobile>
+<app-navbar-action-mobile-home class="communities_mobile"
+                   *ngIf="feedbackPageStatus === false &&
+                               notificationsPageStatus === false &&
+                               settingsPageStatus === false &&
+                               postOpenStatus === false &&
+                               searchOpenStatus === false &&
+                               loginPageStatus === false &&
+                               postCreateType === 'none' && (!plus18 || (plus18 && userPlus18))"
+                    [selectedCommunities]="selectedCommunities"></app-navbar-action-mobile-home>
+<app-mobile-feedback-page class="home_after_login_mobile" [feedbackStatus]="feedbackPageStatus"></app-mobile-feedback-page>
+<app-mobile-notifications-page class="home_after_login_mobile" [notificationStatus]="notificationsPageStatus"></app-mobile-notifications-page>
+<app-mobile-settings-page class="home_after_login_mobile" [settingsStatus]="settingsPageStatus"></app-mobile-settings-page>
+<app-mobile-post-open-page class="home_after_login_mobile"
+                           [postOpenStatus]="postOpenStatus"
+                           [post]="postSingle"
+                           [communityName]="communityName"></app-mobile-post-open-page>
+<app-mobile-login-page class="home_after_login_mobile" [loginStatus]="loginPageStatus"></app-mobile-login-page>
+<app-mobile-search-page class="home_after_login_mobile" [searchStatus]="searchOpenStatus"></app-mobile-search-page>
+<app-mobile-post-create-link class="home_after_login_mobile"
+                             *ngIf="postCreateType === 'link'"
+                             [postCreateStatus]=true></app-mobile-post-create-link>
+<app-mobile-post-create-discussion class="home_after_login_mobile"
+                                   *ngIf="postCreateType === 'discussion'"
+                                   [postCreateStatus]=true></app-mobile-post-create-discussion>
+<app-mobile-post-create-event class="home_after_login_mobile"
+                              *ngIf="postCreateType === 'event'"
+                              [postCreateStatus]=true></app-mobile-post-create-event>
+<app-mobile-post-create-object class="home_after_login_mobile"
+                               *ngIf="postCreateType === 'object'"
+                               [postCreateStatus]=true></app-mobile-post-create-object>

@@ -1,0 +1,7 @@
+<div class="right_column_about_title" *ngIf="userAbout">
+  About {{userFirstName}} {{ userLastName}}!
+</div>
+<div class="right_column_about_content">
+  {{ userAbout }}
+  <span class="read_more" *ngIf="userAbout"> Read More...</span>
+</div>

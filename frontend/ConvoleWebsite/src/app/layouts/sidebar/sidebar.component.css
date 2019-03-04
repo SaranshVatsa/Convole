@@ -1,0 +1,59 @@
+@font-face {
+  font-family: JosefinSans;
+  src: url('../../../../../../../../design main/Fonts/Josefin_Sans/JosefinSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../../../../../../../../design main/Fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+.sidebar_container{
+  min-width: 230px;
+  width: 15%;
+  max-width: 300px;
+  height: auto;
+  left: 0;
+  background-color: #ffffff;
+  padding-top: 70px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  float: left;
+  display: block;
+}
+
+@media all and (min-width: 1600px) {
+.sidebar_container{
+  width: calc(230px + 5%);
+  padding-left: calc(20px + 2%);
+}
+}
+
+.sidebar_anchor{
+  min-width: 230px;
+  width: 15%;
+  max-width: 300px;
+  left: 0;
+  background-color: #ffffff;
+  padding-top: 70px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  float: left;
+  display: block;
+  position: relative;
+}
+.stickBottom{
+  position: fixed;
+  bottom: 0;
+  left: 8px;
+}
+
+.stickTop{
+  top: 0;
+  position: fixed;
+  left: 8px;
+}
+
+.unStick{
+  position: absolute;
+}

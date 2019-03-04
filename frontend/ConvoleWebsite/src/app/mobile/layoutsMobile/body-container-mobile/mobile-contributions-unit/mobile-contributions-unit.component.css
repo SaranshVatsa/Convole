@@ -1,0 +1,113 @@
+@font-face {
+  font-family: Roboto;
+  src: url('../../../../../../../../../../design main/Fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+
+.contributions_unit_container{
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px 3px 0 rgba(119, 119, 119, 0.07);
+  width: 100%;
+  height: 510px;
+  margin-top: 30px;
+}
+
+.discussion_unit_content{
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(100, 100, 100);
+  line-height: 1.2;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+.contributions_unit_footer{
+  height: 30px;
+  width: 98%;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.contributions_unit_great{
+  width: 50px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: calc((100% - (245px))/3);
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+.contributions_unit_spam{
+  width: 100px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: calc((100% - (245px))/3);
+  cursor: pointer;
+}
+
+.contributions_unit_switch{
+  width: 85px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contributions_unit_like_text{
+  font-size: 9px;
+  font-family: "Roboto";
+  color: rgb(104, 154, 249);
+}
+
+.other_post_div{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.contributions_unit_content_title{
+  margin-top: 5px;
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(40, 40, 40);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.blue_text{
+  color: rgb(76, 137, 252);
+}
+
+.contributions_unit_community_guidelines{
+  margin-top: 10px;
+  border-left: 2px solid rgb(214, 214, 214);
+}
+
+.contributions_unit_community_guidelines_title{
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(106, 104, 104);
+  font-weight: bold;
+  line-height: 1.2;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.contributions_unit_community_guidelines_line{
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(106, 104, 104);
+  line-height: 16px;
+  margin-left: 10px;
+}
+

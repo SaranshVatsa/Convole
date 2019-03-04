@@ -1,0 +1,25 @@
+.popups_notifications_container{
+  border-radius: 0  0 7px 7px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px 3px 0 rgba(119, 119, 119, 0.17);
+  /*border: 0.5px solid rgba(72, 72, 72, 0.36);*/
+  width: 300px;
+  height: 400px;
+  z-index: 4;
+  position: fixed;
+  left: calc(100% - 360px);
+  top: 51px;
+  padding-top: 10px;
+}
+
+.show_more_notifications{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(104, 154, 249);
+  line-height: 1.2;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+}

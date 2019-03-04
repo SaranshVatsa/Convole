@@ -1,0 +1,73 @@
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+@font-face {
+  font-family: JosefinSans;
+  src: url('../../../../../../../../../design main/Fonts/Josefin_Sans/JosefinSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+
+
+.body_top_profile{
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+}
+
+.body_top_profile_text{
+  font-size: 18px;
+  font-family: "Roboto-Medium";
+  color: rgb(51, 51, 51);
+  line-height: 40px;
+  width: 50%;
+}
+
+.body_top_profile_toggle{
+  width: 120px;
+  height: 25px;
+  margin-top: 7.5px;
+  border-radius: 2px;
+}
+
+.body_top_profile_toggle_onlyme{
+  font-size: 12px;
+  font-family: "Roboto";
+  float: left;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+}
+
+.body_top_profile_toggle_everyone{
+  font-size: 12px;
+  font-family: "Roboto";
+  float: right;
+  text-align: center;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.selected{
+  background-color: #4c89fc;
+  color: white;
+  line-height: 25px;
+  width: 60px;
+}
+
+.unSelected{
+  background-color: #ffffff;
+  color: #8e8e8e;
+  border: 0.5px solid #cccccc;
+  line-height: 24px;
+  width: 59px;
+}

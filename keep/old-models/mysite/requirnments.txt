@@ -1,0 +1,5 @@
+django
+mongoengine
+pymongo
+django-mongoengine
+python-social-auth

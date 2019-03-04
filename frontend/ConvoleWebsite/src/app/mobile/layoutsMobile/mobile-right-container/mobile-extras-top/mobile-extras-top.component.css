@@ -1,0 +1,22 @@
+
+
+.right_column_home_title{
+  font-size: 14px;
+  font-family: "Roboto-Medium";
+  color: rgb(79, 77, 77);
+  line-height: 1.2;
+  margin-top: 15px;
+}
+
+.right_column_home_content{
+  font-size: 12px;
+  font-family: "Roboto-Regular";
+  color: rgb(70, 70, 70);
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
+.read_more{
+  color: #6192f4;
+  cursor: pointer;
+}

@@ -1,0 +1,131 @@
+@keyframes placeHolderShimmer{
+  0%{
+    background-position: -100% 0
+  }
+  100%{
+    background-position: 100% 0
+  }
+}
+
+.animated-background {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 450px 104px;
+  height: 160px;
+  position: relative;
+  top: 20px;
+}
+
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+
+.link_unit_container{
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+  padding-left: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 3px 0 rgba(119, 119, 119, 0.07);
+}
+
+.link_unit_content{
+  width: 70%;
+  padding: 5px 10px;
+  font-size: 11px;
+  color: rgb(100, 100, 100);
+  line-height: 1.2;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.timeline-item {
+  background: #fff;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  border-radius: 3px;
+  width: 680px;
+}
+
+.link_unit_pic{
+  height: 100%;
+  width: 30%;
+  background-color: #4c89fc;
+  border-radius: 0 6px 6px 0;
+}
+
+.background-masker {
+  background: #fff;
+  position: absolute;
+}
+
+/* Every thing below this is just positioning */
+
+.vertical-space-right{
+  top: 0;
+  bottom: 0;
+  right: 180px;
+  width: 20px;
+}
+
+.line1{
+  left: 250px;
+  right: 200px;
+  height: 20px;
+  top:0;
+}
+
+.space1{
+  top: 20px;
+  left: 0;
+  right: 200px;
+  height: 20px;
+}
+
+.line2{
+  left: 450px;
+  right: 200px;
+  height: 40px;
+  top: 40px;
+}
+
+.space2{
+  top: 80px;
+  left: 0;
+  right: 200px;
+  height: 20px;
+}
+
+.line3{
+  left: 100px;
+  right: 200px;
+  height: 20px;
+  top: 100px;
+}
+
+.space3{
+  top: 120px;
+  left: 0;
+  right: 200px;
+  height: 15px;
+}
+
+.line4{
+  left: 470px;
+  right: 200px;
+  height: 25px;
+  top: 135px;
+}

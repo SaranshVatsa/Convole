@@ -1,0 +1,31 @@
+<div class="sidebar_columns_container" *ngIf="dataReceived">
+  <div class="sidebar_columns_container_title">COLUMNS</div>
+  <div class="sidebar_columns_line">
+    <div class="sidebar_columns_circle_dark left"></div>
+    <span class="sidebar_text left"
+          routerLink="/{{commName}}/all"
+          (click)="columnClicked()">All</span>
+  </div>
+  <div class="sidebar_columns_line"
+       routerLink="/{{commName}}/random"
+       (click)="columnClicked()">
+    <div class="sidebar_columns_circle_dark left"></div>
+    <span class="sidebar_text left">Random</span>
+  </div>
+  <div class="sidebar_columns_line"
+       *ngFor="let column of columns"
+        routerLink="/{{commName}}/{{column.url}}"
+       (click)="columnClicked()">
+    <div class="sidebar_columns_circle left"></div>
+    <span class="sidebar_text left">{{column.name}}</span>
+  </div>
+  <div class="sidebar_home_top_line">
+    <img src="../../../../assets/images/add_icon.png" height="16" width="16" class="add_more_icon">
+    <span class="sidebar_text">Create Column</span>
+  </div>
+</div>
+
+<div class="sidebar_columns_container" *ngIf="!dataReceived">
+  <div class="sidebar_columns_container_title">COLUMNS</div>
+  <app-sidebar-list-loader></app-sidebar-list-loader>
+</div>

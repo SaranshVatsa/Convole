@@ -1,0 +1,7 @@
+<div class="right_column">
+  <app-right-column-home *ngIf="!routeName.includes('@') || routeName.includes('home')"></app-right-column-home>
+  <app-body-right-community-contributions *ngIf="!routeName.includes('@') && !routeName.includes('home')"></app-body-right-community-contributions>
+  <app-body-right-share *ngIf="!routeName.includes('@') && !routeName.includes('home')"></app-body-right-share>
+  <app-body-right-columns-description *ngIf="!routeName.includes('@') && !routeName.includes('home')"></app-body-right-columns-description>
+  <app-body-right-about *ngIf="routeName.includes('@')"></app-body-right-about>
+</div>

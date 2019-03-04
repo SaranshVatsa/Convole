@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.discover_communities_title{
+  font-size: 1.5em;
+  font-family: "Roboto-Bold";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  margin: 0 0 10px 10px;
+}
+
+.discover_communities_container{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f7faff;
+  width: 100%;
+  padding: 30px 55px 30px 55px;
+  box-sizing: border-box;
+}

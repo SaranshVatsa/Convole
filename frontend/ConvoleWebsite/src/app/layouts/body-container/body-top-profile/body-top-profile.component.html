@@ -1,0 +1,13 @@
+<div class="body_top_profile" *ngIf="userLoggedIn === userProfile">
+  <div class="body_top_profile_text left">Show my "like" activities to: </div>
+  <div class="body_top_profile_toggle right">
+    <div class="body_top_profile_toggle_onlyme"
+         id="onlyme_button"
+         (click)="toggleSelect($event)"
+         [ngClass]="{selected: selectedButton === 'onlyme', unSelected: selectedButton === 'everyone'}">Only Me</div>
+    <div class="body_top_profile_toggle_everyone"
+         id="everyone_button"
+         (click)="toggleSelect($event)"
+         [ngClass]="{selected: selectedButton === 'everyone', unSelected: selectedButton === 'onlyme'}">Everyone</div>
+  </div>
+</div>

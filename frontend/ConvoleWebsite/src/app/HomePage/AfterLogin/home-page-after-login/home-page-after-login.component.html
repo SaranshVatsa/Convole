@@ -1,0 +1,50 @@
+<app-nav-bar class="home_after_login_desktop"></app-nav-bar>
+<div class="main_container home_after_login_desktop" (click)="closePopups($event)" [ngStyle]="{overflow: unitClicked == true ? 'hidden' : 'visible'}">
+  <app-sidebar></app-sidebar>
+  <app-body-container [username]="username"></app-body-container>
+  <app-popups-alert-main></app-popups-alert-main>
+  <app-popups-alert-small></app-popups-alert-small>
+  <!--<app-popups-communities-selection></app-popups-communities-selection>-->
+  <!--<app-popups-feedback></app-popups-feedback>-->
+  <app-popups-settings *ngIf="settingsPopupStatus === true"></app-popups-settings>
+</div>
+
+<app-navbar-mobile class="home_after_login_mobile"
+                   *ngIf="feedbackPageStatus === false &&
+                   notificationsPageStatus === false &&
+                   settingsPageStatus === false &&
+                   communitySelectionStatus === false &&
+                   postOpenStatus === false &&
+                   searchOpenStatus === false &&
+                   postCreateType === 'none'"></app-navbar-mobile>
+<app-navbar-action-mobile-home class="home_after_login_mobile"
+                               *ngIf="feedbackPageStatus === false &&
+                               notificationsPageStatus === false &&
+                               settingsPageStatus === false &&
+                               communitySelectionStatus === false &&
+                               postOpenStatus === false &&
+                               searchOpenStatus === false &&
+                               postCreateType === 'none'"></app-navbar-action-mobile-home>
+<app-mobile-feedback-page class="home_after_login_mobile" [feedbackStatus]="feedbackPageStatus"></app-mobile-feedback-page>
+<app-mobile-notifications-page class="home_after_login_mobile" [notificationStatus]="notificationsPageStatus"></app-mobile-notifications-page>
+<app-mobile-settings-page
+    class="home_after_login_mobile"
+    [settingsStatus]="settingsPageStatus"
+    *ngIf="settingsPageStatus"></app-mobile-settings-page>
+<app-mobile-community-selection class="home_after_login_mobile" [communitySelectionStatus]="communitySelectionStatus"></app-mobile-community-selection>
+<app-mobile-post-open-page class="home_after_login_mobile"
+                           [postOpenStatus]="postOpenStatus"
+                           [post]="postSingle"></app-mobile-post-open-page>
+<app-mobile-search-page class="home_after_login_mobile" [searchStatus]="searchOpenStatus"></app-mobile-search-page>
+<app-mobile-post-create-link class="home_after_login_mobile"
+                             *ngIf="postCreateType === 'link'"
+                              [postCreateStatus]=true></app-mobile-post-create-link>
+<app-mobile-post-create-discussion class="home_after_login_mobile"
+                                   *ngIf="postCreateType === 'discussion'"
+                                   [postCreateStatus]=true></app-mobile-post-create-discussion>
+<app-mobile-post-create-event class="home_after_login_mobile"
+                              *ngIf="postCreateType === 'event'"
+                              [postCreateStatus]=true></app-mobile-post-create-event>
+<app-mobile-post-create-object class="home_after_login_mobile"
+                               *ngIf="postCreateType === 'object'"
+                               [postCreateStatus]=true></app-mobile-post-create-object>

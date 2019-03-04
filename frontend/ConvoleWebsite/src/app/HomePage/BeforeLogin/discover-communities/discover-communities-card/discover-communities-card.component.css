@@ -1,0 +1,38 @@
+.discover_communities_card_container{
+  height:200px;
+  width: 180px;
+  background-color: #ffffff;
+  margin: 10px;
+  display: inline-block;
+  box-shadow: 0 3px 3px 0 rgba(119, 119, 119, 0.07);
+  float: left;
+}
+
+.discover_communities_card_container_image{
+  background-color: #6192f4;
+  height: 120px;
+  width: 100%;
+}
+
+.discover_communities_card_container_body{
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.discover_communities_card_container_title{
+  font-size: 16px;
+  font-family: "Roboto-Medium";
+  color: rgb(51, 51, 51);
+  height: 12px;
+}
+
+.discover_communities_card_container_text{
+  font-size: 0.8em;
+  font-family: "Roboto-Light";
+  color: rgb(120, 120, 120);
+  height: 0;
+}
+
+

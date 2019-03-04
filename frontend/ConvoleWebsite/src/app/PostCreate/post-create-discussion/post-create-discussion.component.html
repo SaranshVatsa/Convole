@@ -1,0 +1,32 @@
+<div class="post_create_link_full" id="post_create_link_full"
+     (click)="closePopup($event)"
+     [ngStyle]="{display: popupStatus == true ? 'block' : 'none'}">
+</div>
+<div class="post_create_discussion_container"
+     [ngStyle]="{display: popupStatus == true ? 'block' : 'none', top: topLocation + 60 + 'px'}">
+  <div class="post_create_discussion_title input_div_post_create" contenteditable="true" placeholder="Enter Discussion Title"></div>
+  <div class="post_create_discussion_description input_div_post_create" contenteditable="true" placeholder="Enter description (optional)"></div>
+  <div class="post_create_discussion_image input_div_post_create" contenteditable="true" placeholder="Upload Image (optional)"></div>
+  <div class="post_create_discussion_tags input_div_post_create" contenteditable="true" placeholder="Some related tags"></div>
+  <label>
+    <select class="community_dropdown" (change)="communitySelected($event)">
+      <option>Select a community</option>
+      <option *ngFor="let community of communityList"
+              value="{{community.community.id}}">{{ community.community.name }}</option>
+    </select>
+  </label>
+  <label>
+    <select class="community_dropdown">
+      <option>Select a column</option>
+      <option *ngFor="let column of columnsList"
+              value="{{column.id}}">{{ column.name }}</option>
+    </select>
+  </label>
+  <div class="post_create_discussion_submit">Submit Link</div>
+  <div class="post_create_link_text">
+    <div class="post_create_link_text_title">Guidelines for link submission: </div>
+    <div class="post_create_link_text_line">1. Should not contain abuses.</div>
+    <div class="post_create_link_text_line">2. Should not promote any unethical things.</div>
+    <div class="post_create_link_text_line">3. Should follow column submission rules.</div>
+  </div>
+</div>

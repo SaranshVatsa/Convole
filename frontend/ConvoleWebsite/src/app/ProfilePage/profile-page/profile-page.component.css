@@ -1,0 +1,31 @@
+@font-face {
+  font-family: JosefinSans;
+  src: url('../../../../../../../../design main/Fonts/Josefin_Sans/JosefinSans-Bold.ttf') format('truetype');
+}
+
+
+.main_container{
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+
+.profile_desktop{
+  display: block;
+}
+
+.profile_mobile{
+  display: none;
+}
+
+@media all and (max-width: 700px){
+  .profile_desktop{
+    display: none;
+  }
+  .profile_mobile{
+    display: block;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="sidebar_top_communities" *ngIf="communityName">
+  <div class="sidebar_top_communities_image">
+  </div>
+  <div class="sidebar_top_communities_title">
+    {{ communityName }}
+  </div>
+  <div class="sidebar_top_communities_info">
+    Started {{ createdPast }} Ago. {{ communityMemberCount }} Members
+  </div>
+  <div class="sidebar_top_communities_join" *ngIf="joined == false" (click)="joinButtonClicked()">Join</div>
+  <div class="sidebar_top_communities_join" *ngIf="joined == true" (click)="joinButtonClicked()">Leave</div>
+</div>
+<app-sidebar-top-loader *ngIf="!communityName"></app-sidebar-top-loader>

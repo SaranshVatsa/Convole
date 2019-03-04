@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+	<style>
+		a { font-size: 50px; }
+	</style>
+</head>
+<body>
+	<div style="margin-top: 20vh;">
+		{% if user and not user.is_anonymous %}
+		<div style="text-align: center;">
+			<li>
+				{{ user.get_full_name|default:user.username }}
+			</li>
+			<li>
+				<a href="{% url 'auth:logout' %}?next=/social_networks">
+					Log out
+				</a>
+			</li>
+		</div>
+		{% else %}
+		<a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login with facebook</a>
+		{% endif %}
+	</div>
+</body>
+</html>

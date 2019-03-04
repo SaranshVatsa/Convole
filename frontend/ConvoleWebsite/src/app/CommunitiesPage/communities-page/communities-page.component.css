@@ -1,0 +1,47 @@
+@font-face {
+  font-family: JosefinSans;
+  src: url('../../../../../../../../design main/Fonts/Josefin_Sans/JosefinSans-Bold.ttf') format('truetype');
+}
+
+.main_container{
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.communities_desktop{
+  display: block;
+}
+
+.communities_mobile{
+  display: none;
+}
+
+@media all and (max-width: 700px){
+  .communities_desktop{
+    display: none;
+  }
+  .communities_mobile{
+    display: block;
+  }
+}
+
+.NSFWWarning{
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 92px 30px rgba(11, 28, 61, 0.14);
+  width: 250px;
+  height: 100px;
+  z-index: 4;
+  position: fixed;
+  left: calc(50% - 125px);
+  top: calc(50% - 50px);
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(127, 127, 128);
+  padding-top: 34px;
+  box-sizing: border-box;
+}

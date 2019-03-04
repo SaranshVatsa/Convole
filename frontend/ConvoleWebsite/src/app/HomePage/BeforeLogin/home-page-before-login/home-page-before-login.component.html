@@ -1,0 +1,5 @@
+<app-home-page-before-login-top class="home_before_login_desktop"></app-home-page-before-login-top>
+<app-discover-communities class="home_before_login_desktop"></app-discover-communities>
+<app-home-before-login-mobile class="home_before_login_mobile" *ngIf="loginPageStatus === false"></app-home-before-login-mobile>
+<app-discover-communities-mobile class="home_before_login_mobile" *ngIf="loginPageStatus === false"></app-discover-communities-mobile>
+<app-mobile-login-page class="home_before_login_mobile" [loginStatus]="loginPageStatus"></app-mobile-login-page>

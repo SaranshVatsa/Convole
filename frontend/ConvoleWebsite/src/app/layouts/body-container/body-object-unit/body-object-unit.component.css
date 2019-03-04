@@ -1,0 +1,66 @@
+
+.object_unit_rating_review{
+  position: absolute;
+  bottom: 38px;
+  width: 95%;
+}
+
+.object_unit_review{
+  margin-right: 5px;
+}
+
+.object_unit_rating{
+  margin-left: 5px;
+}
+
+.object_unit_reviews{
+  width: 90px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: calc( (100% - 300px)/2);
+  cursor: pointer;
+}
+
+.object_unit_share{
+  margin-left: 5px;
+  width: 80px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: calc( (100% - 300px)/2);
+  cursor: pointer;
+}
+
+.object_unit_report{
+  margin-left: 5px;
+  width: 100px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.star_icon{
+  margin-bottom: -2px;
+}
+
+.activity_selected{
+  font-weight: bold;
+}
+
+.share_tooltip_object{
+  position: absolute;
+  box-shadow: 0 3px 3px 0 rgba(119, 119, 119, 0.07);
+  width: 140px;
+  height: 40px;
+  top: 25px;
+  right: 170px;
+  background-color: #ffffff;
+  z-index: 100;
+  box-sizing: border-box;
+  padding: 7.5px 15px;
+}

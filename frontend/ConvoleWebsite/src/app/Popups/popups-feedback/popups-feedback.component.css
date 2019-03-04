@@ -1,0 +1,74 @@
+.popups_feedback_full{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(54, 54, 54, 0.588);
+  z-index: 100;
+}
+
+.popups_feedback_main_container{
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  height: 430px;
+  z-index: 4;
+  position: fixed;
+  left: calc(50% - 250px);
+  top: 50px;
+  padding: 30px 50px;
+  box-sizing: border-box;
+}
+
+.popups_feedback_title{
+  font-size: 22px;
+  font-family: "Roboto";
+  color: rgb(76, 137, 252);
+  font-weight: 600;
+  text-align: center;
+}
+
+.popups_feedback_on{
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Roboto";
+  color: rgb(153, 152, 152);
+  font-weight: bold;
+}
+
+.popups_feedback_here{
+  margin-top: 15px;
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(153, 152, 152);
+  font-weight: bold;
+  min-height: 170px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.popups_feedback_send{
+  border-radius: 3px;
+  background-color: rgb(76, 137, 252);
+  width: 110px;
+  height: 25px;
+  margin: 10px auto;
+  font-size: 12px;
+  font-family: "Roboto-Light";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+}
+
+.popups_feedback_text{
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(155, 153, 153);
+  line-height: 14px;
+  text-align: center;
+  margin-top: 70px;
+}

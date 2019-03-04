@@ -1,0 +1,253 @@
+.post_open_discussion{
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+
+
+.post_open_top {
+  width: 100%;
+  height: auto;
+}
+
+.post_open_top_pic{
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  float: left;
+  background-color: #6192f4;
+}
+
+
+.post_open_top_right{
+  width: calc(100% - 35px);
+  height: 100%;
+  float: right;
+}
+
+.post_open_top_right_name{
+  font-family: Roboto-Medium;
+  font-size: 12px;
+  color: rgb(68, 67, 67);
+}
+
+.post_open_top_right_description{
+  font-size: 10px;
+  font-family: "Roboto-Light";
+  color: rgb(63, 63, 63);
+  letter-spacing: 0.5px;
+}
+
+
+.post_open_top_content{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.link_unit_content_title{
+  font-size: 16px;
+  font-family: "Roboto-Medium";
+  color: rgb(40, 40, 40);
+  line-height: 1.2;
+  margin-top: 5px;
+}
+
+.link_unit_content_body{
+  font-size: 12px;
+  font-family: "Roboto-Regular";
+  color: rgb(57, 57, 57);
+  margin-top: 10px;
+}
+
+.discussion_unit_pic{
+  height: 200px;
+  width: 100%;
+  max-width: 350px;
+  background-color: #6192f4;
+  margin-top: 10px;
+}
+
+.link_unit_footer{
+  height: 30px;
+  width: 98%;
+  margin-top: 10px;
+  position: relative;
+  bottom: 0;
+}
+
+.discussion_unit_button_text{
+  font-size: 10px;
+  font-family: "Roboto";
+  color: rgb(104, 154, 249);
+  line-height: 1.2;
+}
+
+.discussion_unit_button_icon{
+  margin-bottom: -3px;
+}
+
+
+
+.discussion_unit_agree{
+  margin-left: 5px;
+  width: 70px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: calc( (100% - 330px)/3);
+  cursor: pointer;
+}
+
+.discussion_unit_disagree{
+  margin-left: 5px;
+  width: 80px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: calc( (100% - 330px)/3);
+  cursor: pointer;
+}
+
+.discussion_unit_share{
+  margin-left: 5px;
+  width: 70px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: calc( (100% - 330px)/3);
+  cursor: pointer;
+}
+
+.discussion_unit_report{
+  margin-left: 5px;
+  width: 75px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+
+.post_open_add_comment{
+  width: 100%;
+  height: auto;
+}
+
+.post_open_add_comment_box:focus{
+  color: rgb(7, 7, 7);
+}
+
+.post_open_add_comment_pic{
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  float: left;
+  background-color: #6192f4;
+}
+
+
+.post_open_add_comment_right{
+  width: calc(100% - 30px);
+  height: 100%;
+  float: right;
+}
+
+.post_open_add_comment_name{
+  font-family: Roboto-Medium;
+  font-size: 11px;
+  color: rgb(68, 67, 67);
+  margin-top: 1px;
+}
+
+.post_open_add_comment_box{
+  font-size: 11px;
+  font-family: "Roboto-Light";
+  color: rgb(63, 63, 63);
+  margin-top: 5px;
+  width: 98%;
+  max-width: 350px;
+  min-height: 70px;
+  height: auto;
+  background-color: #ebebeb;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px;
+  opacity: 0.5;
+}
+
+
+.post_open_add_comment_discuss{
+  border-radius: 3px;
+  background-color: rgb(76, 137, 252);
+  width: 75px;
+  height: 25px;
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+  font-family: "Roboto-Light";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+}
+
+.post_open_top_content{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+}
+
+.share_tooltip{
+  position: absolute;
+  box-shadow: 0 3px 3px 0 rgba(119, 119, 119, 0.07);
+  width: 140px;
+  height: 40px;
+  top: 25px;
+  right: calc((100% - 180px)/4);
+  background-color: #ffffff;
+  z-index: 100;
+  box-sizing: border-box;
+  padding: 7.5px 15px;
+}
+
+.right_share_twitter{
+  width: 35px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.right_share_facebook{
+  width: 35px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.right_share_google{
+  width: 35px;
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+}
+
+.activity_selected {
+  font-weight: bold;
+}

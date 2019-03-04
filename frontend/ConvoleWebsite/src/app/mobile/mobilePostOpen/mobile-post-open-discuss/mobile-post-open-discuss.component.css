@@ -1,0 +1,155 @@
+@font-face {
+  font-family: Roboto;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+
+
+.post_open_discuss{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 10px;
+}
+
+.post_open_discuss_pic{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  float: left;
+  background-color: #6192f4;
+}
+
+
+.post_open_discuss_right{
+  width: calc(100% - 25px);
+  height: 100%;
+  float: right;
+}
+
+.post_open_add_comment_name{
+  font-family: Roboto-Medium;
+  font-size: 11px;
+  color: rgb(68, 67, 67);
+  margin-top: 1px;
+}
+
+.post_open_add_comment_box{
+  font-size: 11px;
+  font-family: "Roboto-Light";
+  color: rgb(157, 157, 157);
+  margin-top: 5px;
+  width:100%;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+
+.discussion_unit_button_text{
+  font-size: 9px;
+  font-family: "Roboto";
+  color: rgb(104, 154, 249);
+  line-height: 1.2;
+}
+
+.discussion_unit_button_icon{
+  margin-bottom: -2px;
+}
+
+
+.link_unit_footer{
+  width: 100%;
+}
+
+
+.discussion_unit_agree{
+  width: 55px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 3.5%;
+  cursor: pointer;
+}
+
+.discussion_unit_disagree{
+  width: 65px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 3.5%;
+  cursor: pointer;
+}
+
+.discussion_unit_share{
+  width: 42px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 3.5%;
+  cursor: pointer;
+}
+
+.discussion_unit_report{
+  width: 60px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.show_more{
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(104, 154, 249);
+  line-height: 1.2;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 5px 0;
+  cursor: pointer;
+  float: left;
+}
+
+.activity_selected {
+  font-weight: bolder;
+}
+
+.post_open_discuss_reply_box{
+  font-size: 11px;
+  font-family: "Roboto-Light";
+  color: rgb(63, 63, 63);
+  margin-top: 5px;
+  width: 100%;
+  min-height: 50px;
+  height: auto;
+  background-color: #ebebeb;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px;
+  opacity: 0.5;
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+}
+
+.post_open_discuss_reply_button{
+  border-radius: 3px;
+  background-color: rgb(76, 137, 252);
+  width: 55px;
+  height: 20px;
+  margin-top: 5px;
+  font-size: 10px;
+  font-family: "Roboto-Light";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+}

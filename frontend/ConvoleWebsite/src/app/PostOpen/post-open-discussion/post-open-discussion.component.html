@@ -1,0 +1,63 @@
+<div class="post_open_discussion">
+  <div class="post_open_top">
+    <div class="post_open_top_pic"></div>
+    <div class="post_open_top_right">
+      <div class="post_open_top_right_name">{{ postUser }}</div>
+      <div class="post_open_top_right_description"> Shared at {{ communityName }}/{{ columnName }} on {{ date }}</div>
+    </div>
+  </div>
+  <div class="post_open_top_content">
+    <div class="link_unit_content_title">{{ postTitle }}</div>
+    <div class="link_unit_content_body">{{ postContent }}
+    </div>
+    <div class="discussion_unit_pic"></div>
+    <div class="link_unit_footer">
+      <div class="discussion_unit_agree" [ngClass]="{activity_selected: liked === true}" (click)="likeClicked($event)">
+        <img src="../../../assets/images/agree_icon.png" height="15" width="18" class="discussion_unit_button_icon">
+        <span class="discussion_unit_button_text">Like({{postLikeCount}})</span>
+      </div>
+      <div class="discussion_unit_disagree" [ngClass]="{activity_selected: saved === true}" (click)="saveClicked($event)">
+        <img src="../../../assets/images/disagree_icon.png" height="15" width="18" class="discussion_unit_button_icon">
+        <span class="discussion_unit_button_text">Save({{postSaveCount}})</span>
+      </div>
+      <div class="discussion_unit_share" [ngClass]="{activity_selected: share === true}" (click)="shareClicked($event)">
+        <img src="../../../assets/images/share_icon.png" height="15" width="18" class="discussion_unit_button_icon" >
+        <span class="discussion_unit_button_text">Share({{postShareCount}})</span>
+        <div class="share_tooltip" *ngIf="shareTooltipStatus">
+          <div class="right_share_twitter">
+            <a href="https://twitter.com/share?url=www.convole.com/home/post/{{linkToPost}}&text=" target="_blank">
+              <img src="../../../assets/images/twitter_icon.png" height="28" width="28">
+            </a>
+          </div>
+          <div class="right_share_facebook">
+            <a href="http://www.facebook.com/sharer.php?u=www.convole.com/home/post/{{linkToPost}}" target="_blank">
+              <img src="../../../assets/images/facebook_icon.png" height="28" width="28">
+            </a>
+          </div>
+          <div class="right_share_google">
+            <a href="https://plus.google.com/share?url=www.convole.com/home/post/{{linkToPost}}" target="_blank">
+              <img src="../../../assets/images/google_plus_icon.png" height="28" width="28">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="discussion_unit_report" [ngClass]="{activity_selected: report === true}">
+        <img src="../../../assets/images/report_icon.png" height="16" width="20" class="discussion_unit_button_icon">
+        <span class="discussion_unit_button_text">Report({{postReportCount}})</span>
+      </div>
+    </div>
+  </div>
+  <div class="post_open_add_comment" *ngIf="userId">
+    <div class="post_open_add_comment_pic"></div>
+    <div class="post_open_add_comment_right">
+      <div class="post_open_add_comment_name">{{currentUserFirstName}} {{currentUserLastName}}</div>
+      <div class="post_open_add_comment_box" contenteditable="true" placeholder="Share Your Thoughts"></div>
+      <div class="post_open_add_comment_discuss" (click)="submitComment($event)">Discuss</div>
+    </div>
+  </div>
+  <app-post-open-discuss
+       [post]="post"
+       *ngFor="let discussion of newDiscussionData"
+       [discussData]="discussion"
+       [allDiscussions]="newDiscussionData"></app-post-open-discuss>
+</div>

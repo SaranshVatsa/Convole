@@ -1,0 +1,28 @@
+<div class="header_container" (click)="closePopups($event)">
+  <div class="left" routerLink="/home">
+    <img src="../../../assets/images/convole_logo-1.png" class="logo_navbar left"/>
+    <span class="navbar_beta right">Beta</span>
+    <span class="navbar_title right">Convole</span>
+  </div>
+  <div class="searchbar_navbar left" (click)="toggleSearchPopup()">
+    <form class="search" method="post" action="#">
+      <input type="text" id="searchbar_navbar_input" placeholder="Search">
+      <label for="searchbar_navbar_input"></label>
+    </form>
+  </div>
+  <app-popups-search [searchPopupStatus]="searchPopupStatus"></app-popups-search>
+  <div class="navbar_right right" *ngIf="routeName.includes('home')">
+    <img src="../../../assets/images/notification_icon_25by24.jpg" height="25" width="23"
+         class="notificationIconNavbar left"
+         *ngIf="currRoute === '/home'"
+          (click)="notificationsPopupOpen()"
+         id="notificationIcon"
+    >
+    <div class="navbar_profile_pic right" routerLink="/@{{userNameLoggedIn}}"></div>
+  </div>
+  <app-popups-notifications [notificationPopupStatus]="notificationsPopupStatus"></app-popups-notifications>
+  <div class="navbar_right_before right" *ngIf="(!routeName.includes('@') || routeName.includes('@')) && !routeName.includes('home')">
+    <div class="sidebar_top_communities_signup" (click)="openLogin()">Sign Up</div>
+    <div class="sidebar_top_communities_login" (click)="openLogin()">Login</div>
+  </div>
+</div>

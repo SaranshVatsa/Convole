@@ -1,0 +1,53 @@
+<div class="post_open_full"
+     id="post_open"
+     *ngIf="postOpenStatus === true">
+  <div class="post_open_close" (click)="closePopup()">X</div>
+  <div class="post_open_left_right"
+       id="post_open_left"
+       (click)="lastPost()"
+       *ngIf="postPointer > 0"></div>
+  <div class="post_open_left_right"
+       id="post_open_right"
+       (click)="nextPost()"
+       *ngIf="postPointer < allPostLength - 1"></div>
+<div class="post_open_main_container" [ngStyle]="{display: postOpenStatus == true ? 'block' : 'none'}">
+  <app-post-open-discussion
+      *ngIf="openedUnit === 'link'"
+      [post]="post"
+      [communityName]="communityName"
+      [userAndPostData]="postAndUserData"></app-post-open-discussion>
+  <app-post-open-discussion
+      *ngIf="openedUnit === 'link1'"
+      [post]="post"
+      [communityName]="communityName"
+      [userAndPostData]="postAndUserData"></app-post-open-discussion>
+  <app-post-open-discussion-without-image
+      *ngIf="openedUnit === 'discussion'"
+      [post]="post"
+      [communityName]="communityName"
+      [userAndPostData]="postAndUserData"></app-post-open-discussion-without-image>
+  <app-post-open-discussion-without-image
+      *ngIf="openedUnit === 'discussion1'"
+      [post]="post"
+      [communityName]="communityName"
+      [userAndPostData]="postAndUserData"></app-post-open-discussion-without-image>
+  <app-post-open-event
+      *ngIf="openedUnit === 'event'"
+      [post]="post"
+      [communityName]="communityName"
+      [userAndPostData]="postAndUserData"></app-post-open-event>
+  <app-post-open-event
+      *ngIf="openedUnit === 'event1'"
+      [post]="post"
+      [communityName]="communityName"
+      [userAndPostData]="postAndUserData"></app-post-open-event>
+  <app-post-open-object
+      *ngIf="openedUnit === 'object'"
+      [post]="post"
+      [communityName]="communityName"></app-post-open-object>
+  <app-post-open-object
+      *ngIf="openedUnit === 'object1'"
+      [post]="post"
+      [communityName]="communityName"></app-post-open-object>
+</div>
+</div>

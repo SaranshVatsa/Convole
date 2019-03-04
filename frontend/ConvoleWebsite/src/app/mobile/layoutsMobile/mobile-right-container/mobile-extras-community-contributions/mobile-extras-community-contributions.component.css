@@ -1,0 +1,61 @@
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.community_contributions_container{
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.community_contributions_container_title{
+  font-size: 14px;
+  font-family: "Roboto-Medium";
+  color: rgb(79, 77, 77);
+  line-height: 1.2;
+}
+
+.community_contributions_stats_container{
+  width: 100%;
+  height: auto;
+  margin: 15px 0 15px 0;
+}
+
+.community_contributions_stats_score{
+  width: 40%;
+  text-align: center;
+  display: inline-block;
+}
+
+.community_contributions_stats_rank{
+  width: 40%;
+  text-align: center;
+  display: inline-block;
+}
+
+.community_contributions_stats_score_number{
+  font-size: 20px;
+  font-family: "Roboto-Medium";
+  color: rgb(76, 137, 252);
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.community_contributions_stats_score_text{
+  font-size: 14px;
+  font-family: "Roboto-Regular";
+  color: rgb(70, 70, 70);
+  line-height: 15px;
+}
+
+.community_contributions_paragraph{
+  width: 100%;
+  font-size: 12px;
+  font-family: "Roboto-Regular";
+  color: rgb(70, 70, 70);
+  line-height: 16px;
+}

@@ -1,0 +1,21 @@
+
+.right_column_about_title{
+  font-size: 16.8px;
+  font-family: "Roboto-Medium";
+  color: rgb(79, 77, 77);
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
+.right_column_about_content{
+  font-size: 14px;
+  color: rgb(70, 70, 70);
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
+.read_more{
+  color: #6192f4;
+  cursor: pointer;
+}

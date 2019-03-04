@@ -1,0 +1,36 @@
+<div class="post_open_discuss"
+     [ngStyle]="{'marginLeft': discussionLevel*25 + 'px'}"
+     *ngIf="render === true">
+  <div class="post_open_discuss_pic"></div>
+  <div class="post_open_discuss_right">
+    <div class="post_open_add_comment_name">{{ discussionFirstName }} {{ discussionLastName }}</div>
+    <div class="post_open_add_comment_box">{{ discussionContent }}</div>
+    <div class="link_unit_footer">
+      <div class="discussion_unit_agree" [ngClass]="{activity_selected: agreed === true}" (click)="agreeClicked()">
+        <img src="../../../../assets/images/agree_icon.png" height="12" width="15" class="discussion_unit_button_icon">
+        <span class="discussion_unit_button_text">Agree({{discussionAgreeCount}})</span>
+      </div>
+      <div class="discussion_unit_disagree">
+        <img src="../../../../assets/images/disagree_icon.png" height="12" width="15" class="discussion_unit_button_icon">
+        <span class="discussion_unit_button_text">Disagree({{discussionDisagreeCount}})</span>
+      </div>
+      <div class="discussion_unit_share" (click)="replyClicked()">
+        <img src="../../../../assets/images/reply_icon.png" height="10" width="12" class="discussion_unit_button_icon">
+        <span class="discussion_unit_button_text">Reply</span>
+      </div>
+      <div class="discussion_unit_report">
+        <img src="../../../../assets/images/report_icon.png" height="14" width="18" class="discussion_unit_button_icon">
+        <span class="discussion_unit_button_text">Report({{discussionReportCount}})</span>
+      </div>
+    </div>
+    <div class="post_open_discuss_reply_box"
+         contenteditable="true"
+         placeholder="Share Your Thoughts"
+         *ngIf="replyStatus"></div>
+    <div class="post_open_discuss_reply_button"
+         *ngIf="replyStatus"
+         (click)="submitReply($event)">Reply</div>
+  </div>
+  <div class="show_more" (click)="showMore()" *ngIf="showMoreRender === true">-----Show More Comments------</div>
+</div>
+

@@ -1,0 +1,257 @@
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.popups_settings_full{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(54, 54, 54, 0.588);
+  z-index: 100;
+}
+
+.popups_settings_close{
+  position: fixed;
+  top: 10px;
+  left: 95%;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #ffffff;
+  color: #4c89fc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popups_settings_main_container{
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  width: 700px;
+  height: auto;
+  z-index: 200;
+  position: absolute;
+  left: calc(50% - 350px);
+  top: 50px;
+  padding: 30px 50px;
+  box-sizing: border-box;
+}
+
+.popups_settings_title{
+  font-size: 26px;
+  font-family: "Roboto";
+  color: rgb(80, 140, 249);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.popups_settings_account_info{
+  width: 550px;
+  margin: auto;
+  height: auto;
+}
+
+.popups_settings_account_info_title{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(69, 69, 69);
+  font-weight: bold;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 0.5px solid rgba(160, 160, 160, 0.5);
+}
+
+.popups_settings_email{
+  margin: 10px 0 20px 15px;
+  width: 535px;
+  height: auto;
+}
+
+.popups_settings_email_title{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(69, 69, 69);
+}
+
+.popups_settings_email_address{
+  margin-left: 30px;
+  font-size: 13px;
+  font-family: "Roboto";
+  color: rgb(69, 69, 69);
+  margin-top: 5px;
+  font-weight: 600;
+  width: 350px;
+}
+
+.popups_settings_edit_email{
+  border-radius: 3px;
+  background-color: rgb(76, 137, 252);
+  box-shadow: 0px 7px 10px 0px rgba(76, 137, 252, 0.1);
+  width: 80px;
+  height: 25px;
+  font-size: 13px;
+  font-family: "Roboto-Light";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+  margin-top: -25px;
+}
+
+
+
+
+.popups_settings_username{
+  margin: 10px 0 20px 15px;
+  width: 535px;
+  height: auto;
+}
+
+.popups_settings_username_title{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(69, 69, 69);
+}
+
+.popups_settings_username_name{
+  margin-left: 30px;
+  font-size: 13px;
+  font-family: "Roboto";
+  color: rgb(69, 69, 69);
+  margin-top: 5px;
+  font-weight: 600;
+  width: 350px;
+}
+
+.popups_settings_edit_username{
+  border-radius: 3px;
+  background-color: rgb(76, 137, 252);
+  box-shadow: 0px 7px 10px 0px rgba(76, 137, 252, 0.1);
+  width: 110px;
+  height: 25px;
+  font-size: 13px;
+  font-family: "Roboto-Light";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+  margin-top: -25px;
+}
+
+.popups_settings_notifications{
+  width: 550px;
+  margin: 40px auto;
+  height: auto;
+}
+
+.popups_settings_notifications_title{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(69, 69, 69);
+  font-weight: bold;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 0.5px solid rgba(160, 160, 160, 0.5);
+}
+
+.popups_settings_notifications_line1{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(69, 69, 69);
+  margin: 40px 0 0 15px;
+  font-weight: 600;
+}
+
+.popups_settings_notifications_line2{
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(155, 153, 153);
+  margin: 30px 0 0 15px;
+}
+
+.popups_settings_notifications_line_extra{
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(69, 69, 69);
+  margin: 30px 0 0 15px;
+}
+
+.popup_settings_indented{
+  margin-left: 20px;
+}
+
+
+.popups_settings_toggle{
+  width: 90px;
+  height: 25px;
+  margin-top: -25px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.popups_settings_toggle_big{
+  width: 110px;
+  height: 25px;
+  margin-top: -25px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.popups_settings_toggle_on{
+  font-size: 12px;
+  font-family: "Roboto";
+  float: left;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+}
+
+.popups_settings_toggle_off{
+  font-size: 12px;
+  font-family: "Roboto";
+  float: right;
+  text-align: center;
+  border-radius: 0 4px 4px 0;
+}
+
+.selected{
+  background-color: #4c89fc;
+  color: white;
+  line-height: 25px;
+  width: 45px;
+}
+
+.unSelected{
+  background-color: #ffffff;
+  color: #cccccc;
+  border: 0.5px solid #cccccc;
+  line-height: 24px;
+  width: 44px;
+}
+
+.selected_big{
+  background-color: #4c89fc;
+  color: white;
+  line-height: 25px;
+  width: 55px;
+}
+
+.unSelected_big{
+  background-color: #ffffff;
+  color: #cccccc;
+  border: 0.5px solid #cccccc;
+  line-height: 24px;
+  width: 54px;
+}

@@ -1,0 +1,57 @@
+<div class="mobile_post_open_page" *ngIf="postOpenStatus === true">
+  <div class="mobile_post_open_header">
+    <img src="../../../../assets/images/close_icon.png" height="15" width="15"
+         class="mobile_post_open_header_back"
+         (click)="goBack()">
+    <div class="mobile_post_open_header_next"
+         (click)="nextPost()"
+         *ngIf="postPointer < allPostLength - 1">
+      <div class="mobile_post_open_header_next_text">Next</div>
+      <img src="../../../../assets/images/next_icon.png" class="mobile_post_open_header_next_icon" height="15" width="9">
+    </div>
+    <img src="../../../../assets/images/share_icon2.png" height="18" width="18"
+         class="mobile_post_open_header_share">
+  </div>
+  <div class="popups_login_main_container">
+    <app-mobile-post-open-discussion
+        *ngIf="unitClicked === 'link' "
+        [post]="post"
+        [communityName]="communityName">
+    </app-mobile-post-open-discussion>
+    <app-mobile-post-open-discussion
+          *ngIf="unitClicked === 'link1' "
+          [post]="post"
+          [communityName]="communityName">
+    </app-mobile-post-open-discussion>
+    <app-mobile-post-open-object
+        *ngIf="unitClicked === 'object' "
+        [post]="post"
+        [communityName]="communityName">
+    </app-mobile-post-open-object>
+      <app-mobile-post-open-object
+          *ngIf="unitClicked === 'object1' "
+          [post]="post"
+          [communityName]="communityName">
+      </app-mobile-post-open-object>
+    <app-mobile-post-open-discussion-without-image
+        *ngIf="unitClicked === 'discussion' "
+        [post]="post"
+        [communityName]="communityName">
+    </app-mobile-post-open-discussion-without-image>
+      <app-mobile-post-open-discussion-without-image
+          *ngIf="unitClicked === 'discussion1' "
+          [post]="post"
+          [communityName]="communityName">
+      </app-mobile-post-open-discussion-without-image>
+    <app-mobile-post-open-event
+        *ngIf="unitClicked === 'event' "
+        [post]="post"
+        [communityName]="communityName">
+    </app-mobile-post-open-event>
+    <app-mobile-post-open-event
+        *ngIf="unitClicked === 'event1' "
+        [post]="post"
+        [communityName]="communityName">
+    </app-mobile-post-open-event>
+  </div>
+</div>

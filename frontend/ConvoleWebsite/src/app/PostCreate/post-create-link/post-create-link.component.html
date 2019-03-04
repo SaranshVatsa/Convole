@@ -1,0 +1,28 @@
+<div class="post_create_link_full" id="post_create_link_full"
+     (click)="closePopup($event)"
+     [ngStyle]="{display: popupStatus == true ? 'block' : 'none'}">
+  <div class="post_create_link_container">
+    <div class="post_create_link_enter" contenteditable="true" placeholder="Enter link here"></div>
+    <label>
+      <select class="community_dropdown" (change)="communitySelected($event)">
+        <option>Select a community</option>
+        <option *ngFor="let community of communityList"
+                value="{{community.community.id}}">{{ community.community.name }}</option>
+      </select>
+    </label>
+    <label>
+      <select class="community_dropdown">
+        <option>Select a column</option>
+        <option *ngFor="let column of columnsList"
+                value="{{column.id}}">{{ column.name }}</option>
+      </select>
+    </label>
+    <div class="post_create_link_submit">Submit Link</div>
+    <div class="post_create_link_text">
+      <div class="post_create_link_text_title">Guidelines for link submission: </div>
+      <div class="post_create_link_text_line">1. No shortlinks or redirecting links.</div>
+      <div class="post_create_link_text_line">2. Link should not point to pirated content.</div>
+      <div class="post_create_link_text_line">3. Should follow column submission rules.</div>
+    </div>
+  </div>
+</div>

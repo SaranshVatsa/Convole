@@ -1,0 +1,18 @@
+.sidebar_bottom_container{
+  position: relative;
+  left: 0;
+  width: 230px;
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(139, 137, 137);
+  line-height: 1.846;
+  font-weight: 600;
+}
+
+.copyright{
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(72, 72, 72);
+  line-height: 1.2;
+  font-weight: 600;
+}

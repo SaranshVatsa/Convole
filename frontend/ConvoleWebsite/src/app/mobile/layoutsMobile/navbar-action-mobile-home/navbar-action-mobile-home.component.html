@@ -1,0 +1,87 @@
+<div class="navbar_action_home_container" *ngIf="routeName.includes('home')">
+  <div class="navbar_action_button"
+       id="navbar_action_navigator"
+       (click)="navbarActionSelect($event)"
+      [ngClass]="{selected: selected === 'Navigator'}">Navigator</div>
+  <div class="navbar_action_button"
+       id="navbar_action_home"
+       (click)="navbarActionSelect($event)"
+       [ngClass]="{selected: selected === 'Home'}">Home</div>
+  <div class="navbar_action_button"
+       id="navbar_action_explore"
+       (click)="navbarActionSelect($event)"
+       [ngClass]="{selected: selected === 'Explore'}">Explore</div>
+  <div class="navbar_action_button"
+       id="navbar_action_extras"
+       (click)="navbarActionSelect($event)"
+       [ngClass]="{selected: selected === 'Extras'}">Extras</div>
+</div>
+
+<div class="navbar_action_home_container" *ngIf="!routeName.includes('@') && !routeName.includes('home')">
+  <div class="navbar_action_button_comm"
+       id="navbar_action_columns"
+       (click)="navbarActionSelect($event)"
+       [ngClass]="{selected: selectedCommunities === 'Columns'}">Columns</div>
+  <div class="navbar_action_button_comm"
+       id="navbar_action_posts"
+       (click)="navbarActionSelect($event)"
+       [ngClass]="{selected: selectedCommunities === 'Posts'}">Posts</div>
+  <div class="navbar_action_button_comm"
+       id="navbar_action_comm_extras"
+       (click)="navbarActionSelect($event)"
+       [ngClass]="{selected: selectedCommunities === 'Extras'}">Extras</div>
+</div>
+
+
+<div class="navbar_action_home_container" *ngIf="routeName.includes('@')">
+  <div class="navbar_action_button_comm"
+       id="navbar_action_activities"
+       (click)="navbarActionSelect($event)"
+       [ngClass]="{selected: selectedProfile === 'Activities'}">Activities</div>
+  <div class="navbar_action_button_comm"
+       id="navbar_action_profile_posts"
+       (click)="navbarActionSelect($event)"
+       [ngClass]="{selected: selectedProfile === 'Posts'}">Posts</div>
+  <div class="navbar_action_button_comm"
+       id="navbar_action_about"
+       (click)="navbarActionSelect($event)"
+       [ngClass]="{selected: selectedProfile === 'About'}">About</div>
+</div>
+
+
+
+<div class="mobile_body_container"
+     [ngClass]="{container_navigator: selected === 'Navigator',
+     container_home: selected === 'Home' || selected === 'Explore'}"
+      *ngIf="routeName.includes('home')">
+  <app-sidebar-communities *ngIf="selected === 'Navigator'"></app-sidebar-communities>
+  <app-sidebar-following *ngIf="selected === 'Navigator'"></app-sidebar-following>
+  <app-sidebar-accounts *ngIf="selected === 'Navigator'"></app-sidebar-accounts>
+  <app-body-container-mobile *ngIf="selected === 'Home' || selected === 'Explore'"></app-body-container-mobile>
+  <app-mobile-right-container *ngIf="selected === 'Extras'"></app-mobile-right-container>
+</div>
+
+<div class="mobile_body_container"
+     [ngClass]="{container_navigator: selectedCommunities === 'Columns',
+     container_home: selectedCommunities === 'Posts'}"
+     *ngIf="!routeName.includes('@') && !routeName.includes('home')">
+  <app-mobile-popups-alert-main></app-mobile-popups-alert-main>
+  <app-mobile-popups-alert-small></app-mobile-popups-alert-small>
+  <app-mobile-sidebar-top-communities *ngIf="selectedCommunities === 'Columns'"></app-mobile-sidebar-top-communities>
+  <app-sidebar-columns *ngIf="selectedCommunities === 'Columns'"></app-sidebar-columns>
+  <app-sidebar-contributions *ngIf="selectedCommunities === 'Columns'"></app-sidebar-contributions>
+  <app-mobile-sidebar-bottom *ngIf="selectedCommunities === 'Columns'"></app-mobile-sidebar-bottom>
+  <app-body-container-mobile *ngIf="selectedCommunities === 'Posts'"></app-body-container-mobile>
+  <app-mobile-right-container *ngIf="selectedCommunities === 'Extras'"></app-mobile-right-container>
+</div>
+
+<div class="mobile_body_container"
+     [ngClass]="{container_navigator: selectedProfile === 'Activities',
+     container_home: selectedProfile === 'Posts'}"
+     *ngIf="routeName.includes('@')">
+  <app-mobile-sidebar-top-profile *ngIf="selectedProfile === 'Activities'"></app-mobile-sidebar-top-profile>
+  <app-sidebar-activities *ngIf="selectedProfile === 'Activities'"></app-sidebar-activities>
+  <app-mobile-sidebar-bottom *ngIf="selectedProfile === 'Activities'"></app-mobile-sidebar-bottom>
+  <app-body-container-mobile *ngIf="selectedProfile === 'Posts'"></app-body-container-mobile>
+  <app-mobile-right-container *ngIf="selectedProfile === 'About'"></app-mobile-right-container>
+</div>

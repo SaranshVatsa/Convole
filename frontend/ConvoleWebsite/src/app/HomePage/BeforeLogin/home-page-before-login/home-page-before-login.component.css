@@ -1,0 +1,15 @@
+.home_before_login_desktop{
+  display: block;
+}
+.home_before_login_mobile{
+  display: none;
+}
+
+@media all and (max-width: 700px){
+  .home_before_login_desktop{
+    display: none;
+  }
+  .home_before_login_mobile{
+    display: block;
+  }
+}

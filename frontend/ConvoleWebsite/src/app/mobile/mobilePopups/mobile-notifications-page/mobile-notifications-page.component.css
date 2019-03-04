@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+.mobile_feedback_page{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+
+
+.mobile_feedback_header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px 5px 10px;
+  box-shadow: 0 3px 13px 0 rgba(48, 48, 48, 0.15);
+  box-sizing: border-box;
+}
+.mobile_feedback_header_title{
+  font-size: 17px;
+  font-family: "Roboto-Regular";
+  color: rgb(74, 75, 75);
+  margin-left: 20px;
+  width: 100px;
+  float: left;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.mobile_feedback_header_back{
+  margin: 10px 0 0 10px;
+  float: left;
+  cursor: pointer;
+}
+
+
+.mobile_notifications_body{
+  margin-top: 50px;
+}

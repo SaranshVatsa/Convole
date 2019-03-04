@@ -1,0 +1,250 @@
+<div class="mobile_feedback_page" [ngStyle]="{display: settingsStatus === true ? 'block' : 'none'}">
+  <div class="mobile_feedback_header">
+    <img src="../../../../assets/images/back_arrow.png" height="20" width="10"
+         class="mobile_feedback_header_back"
+         (click)="goBack()">
+    <div class="mobile_feedback_header_title">Settings</div>
+  </div>
+  <div class="popups_settings_main_container">
+    <div class="popups_settings_account_info">
+      <div class="popups_settings_account_info_title">Account Information Update</div>
+      <div class="popups_settings_email">
+        <div class="popups_settings_email_title">Email Address</div>
+        <div class="popups_settings_email_address">ineelshah@gmail.com</div>
+        <div class="popups_settings_edit_email">Edit Email</div>
+      </div>
+      <div class="popups_settings_username">
+        <div class="popups_settings_username_title">Username</div>
+        <div class="popups_settings_username_name">ineel16</div>
+        <div class="popups_settings_edit_username">Edit Username</div>
+      </div>
+    </div>
+    <div class="popups_settings_notifications">
+      <div class="popups_settings_notifications_title">Notifications Settings</div>
+
+
+
+      <div class="popups_settings_notifications_line1">Mails</div>
+
+
+      <div class="popups_settings_notifications_line2">Reminders for 'Attending' + 'Also Attending'</div>
+      <div class="popups_settings_toggle right">
+        <div class="popups_settings_toggle_on"
+             id="mails_1_on"
+             (click)="mails1Toggle($event)"
+             [ngClass]="{selected: mails1Button === true, unSelected: mails1Button === false}">On</div>
+        <div class="popups_settings_toggle_off"
+             id="mails_1_off"
+             (click)="mails1Toggle($event)"
+             [ngClass]="{selected: mails1Button === false, unSelected: mails1Button === true}">Off</div>
+      </div>
+
+      <div class="popups_settings_notifications_line2">Interesting Updates in Communities</div>
+      <div class="popups_settings_toggle right">
+        <div class="popups_settings_toggle_on"
+             id="mails_2_on"
+             (click)="mails2Toggle($event)"
+             [ngClass]="{selected: mails2Button === true, unSelected: mails2Button === false}">On</div>
+        <div class="popups_settings_toggle_off"
+             id="mails_2_off"
+             (click)="mails2Toggle($event)"
+             [ngClass]="{selected: mails2Button === false, unSelected: mails2Button === true}">Off</div>
+      </div>
+
+      <div class="popups_settings_notifications_line2">The post you reported is removed.</div>
+      <div class="popups_settings_toggle right">
+        <div class="popups_settings_toggle_on"
+             id="mails_3_on"
+             (click)="mails3Toggle($event)"
+             [ngClass]="{selected: mails3Button === true, unSelected: mails3Button === false}">On</div>
+        <div class="popups_settings_toggle_off"
+             id="mails_3_off"
+             (click)="mails3Toggle($event)"
+             [ngClass]="{selected: mails3Button === false, unSelected: mails3Button === true}">Off</div>
+      </div>
+
+      <div class="popups_settings_notifications_line2">Your content is removed as it was reported spam.</div>
+      <div class="popups_settings_toggle right">
+        <div class="popups_settings_toggle_on"
+             id="mails_4_on"
+             (click)="mails4Toggle($event)"
+             [ngClass]="{selected: mails4Button === true, unSelected: mails4Button === false}">On</div>
+        <div class="popups_settings_toggle_off"
+             id="mails_4_off"
+             (click)="mails4Toggle($event)"
+             [ngClass]="{selected: mails4Button === false, unSelected: mails4Button === true}">Off</div>
+      </div>
+
+
+
+
+
+      <div class="popups_settings_notifications_line1">Push Notifications</div>
+
+
+      <div class="popups_settings_notifications_line_extra">Allow Push Notifications</div>
+      <div class="popups_settings_toggle right">
+        <div class="popups_settings_toggle_on"
+             id="push_notif_on"
+             (click)="pushNotifToggle($event)"
+             [ngClass]="{selected: pushNotifButton === true, unSelected: pushNotifButton === false}">On</div>
+        <div class="popups_settings_toggle_off"
+             id="push_notif_off"
+             (click)="pushNotifToggle($event)"
+             [ngClass]="{selected: pushNotifButton === false, unSelected: pushNotifButton === true}">Off</div>
+      </div>
+
+      <div class="popups_settings_notifications_line_extra" *ngIf="pushNotifButton === true">Send For: </div>
+
+      <div class="popup_settings_indented" *ngIf="pushNotifButton === true">
+
+        <div class="popups_settings_notifications_line2">Likes</div>
+        <div class="popups_settings_toggle right">
+          <div class="popups_settings_toggle_on"
+               id="push_notif_like_on"
+               (click)="pushNotifLikesToggle($event)"
+               [ngClass]="{selected: pushNotifLikesButton === true, unSelected: pushNotifLikesButton === false}">On</div>
+          <div class="popups_settings_toggle_off"
+               id="push_notif_like_off"
+               (click)="pushNotifLikesToggle($event)"
+               [ngClass]="{selected: pushNotifLikesButton === false, unSelected: pushNotifLikesButton === true}">Off</div>
+        </div>
+
+        <div class="popups_settings_notifications_line2">Agree</div>
+        <div class="popups_settings_toggle right">
+          <div class="popups_settings_toggle_on"
+               id="push_notif_agree_on"
+               (click)="pushNotifAgreeToggle($event)"
+               [ngClass]="{selected: pushNotifAgreeButton === true, unSelected: pushNotifAgreeButton === false}">On</div>
+          <div class="popups_settings_toggle_off"
+               id="push_notif_agree_off"
+               (click)="pushNotifAgreeToggle($event)"
+               [ngClass]="{selected: pushNotifAgreeButton === false, unSelected: pushNotifAgreeButton === true}">Off</div>
+        </div>
+
+        <div class="popups_settings_notifications_line2">Disagree</div>
+        <div class="popups_settings_toggle right">
+          <div class="popups_settings_toggle_on"
+               id="push_notif_disagree_on"
+               (click)="pushNotifDisagreeToggle($event)"
+               [ngClass]="{selected: pushNotifDisagreeButton === true, unSelected: pushNotifDisagreeButton === false}">On</div>
+          <div class="popups_settings_toggle_off"
+               id="push_notif_disagree_off"
+               (click)="pushNotifDisagreeToggle($event)"
+               [ngClass]="{selected: pushNotifDisagreeButton === false, unSelected: pushNotifDisagreeButton === true}">Off</div>
+        </div>
+
+        <div class="popups_settings_notifications_line2">Reminders for 'Attending' + 'Also Attending'</div>
+        <div class="popups_settings_toggle right">
+          <div class="popups_settings_toggle_on"
+               id="push_notif_reminder_on"
+               (click)="pushNotifReminderToggle($event)"
+               [ngClass]="{selected: pushNotifReminderButton === true, unSelected: pushNotifReminderButton === false}">On</div>
+          <div class="popups_settings_toggle_off"
+               id="push_notif_reminder_off"
+               (click)="pushNotifReminderToggle($event)"
+               [ngClass]="{selected: pushNotifReminderButton === false, unSelected: pushNotifReminderButton === true}">Off</div>
+        </div>
+
+        <div class="popups_settings_notifications_line2">Follower Increase</div>
+        <div class="popups_settings_toggle right">
+          <div class="popups_settings_toggle_on"
+               id="push_notif_follower_on"
+               (click)="pushNotifFollowersToggle($event)"
+               [ngClass]="{selected: pushNotifFollowersButton === true, unSelected: pushNotifFollowersButton === false}">On</div>
+          <div class="popups_settings_toggle_off"
+               id="push_notif_follower_off"
+               (click)="pushNotifFollowersToggle($event)"
+               [ngClass]="{selected: pushNotifFollowersButton === false, unSelected: pushNotifFollowersButton === true}">Off</div>
+        </div>
+
+        <div class="popups_settings_notifications_line2">Interesting Updates in Community</div>
+        <div class="popups_settings_toggle right">
+          <div class="popups_settings_toggle_on"
+               id="push_notif_updates_on"
+               (click)="pushNotifUpdatesToggle($event)"
+               [ngClass]="{selected: pushNotifUpdatesButton === true, unSelected: pushNotifUpdatesButton === false}">On</div>
+          <div class="popups_settings_toggle_off"
+               id="push_notif_updates_off"
+               (click)="pushNotifUpdatesToggle($event)"
+               [ngClass]="{selected: pushNotifUpdatesButton === false, unSelected: pushNotifUpdatesButton === true}">Off</div>
+        </div>
+      </div>
+
+      <div class="popups_settings_notifications_line1">Privacy Settings</div>
+
+
+      <div class="popups_settings_notifications_line2">Who can see my Likes?</div>
+      <div class="popups_settings_toggle_big right">
+        <div class="popups_settings_toggle_on"
+             id="privacy_likes_on"
+             (click)="privacyLikesToggle($event)"
+             [ngClass]="{selected_big: privacyLikesButton === true, unSelected_big: privacyLikesButton === false}">Only Me</div>
+        <div class="popups_settings_toggle_off"
+             id="privacy_likes_off"
+             (click)="privacyLikesToggle($event)"
+             [ngClass]="{selected_big: privacyLikesButton === false, unSelected_big: privacyLikesButton === true}">Everyone</div>
+      </div>
+
+      <div class="popups_settings_notifications_line2">Who can see my Saved?</div>
+      <div class="popups_settings_toggle_big right">
+        <div class="popups_settings_toggle_on"
+             id="privacy_saves_on"
+             (click)="privacySavesToggle($event)"
+             [ngClass]="{selected_big: privacySavesButton === true, unSelected_big: privacySavesButton === false}">Only Me</div>
+        <div class="popups_settings_toggle_off"
+             id="privacy_saves_off"
+             (click)="privacySavesToggle($event)"
+             [ngClass]="{selected_big: privacySavesButton === false, unSelected_big: privacySavesButton === true}">Everyone</div>
+      </div>
+
+      <div class="popups_settings_notifications_line2">Who can see my Agrees?</div>
+      <div class="popups_settings_toggle_big right">
+        <div class="popups_settings_toggle_on"
+             id="privacy_agree_on"
+             (click)="privacyAgreeToggle($event)"
+             [ngClass]="{selected_big: privacyAgreeButton === true, unSelected_big: privacyAgreeButton === false}">Only Me</div>
+        <div class="popups_settings_toggle_off"
+             id="privacy_agree_off"
+             (click)="privacyAgreeToggle($event)"
+             [ngClass]="{selected_big: privacyAgreeButton === false, unSelected_big: privacyAgreeButton === true}">Everyone</div>
+      </div>
+
+      <div class="popups_settings_notifications_line2">Who can see my Disagrees?</div>
+      <div class="popups_settings_toggle_big right">
+        <div class="popups_settings_toggle_on"
+             id="privacy_disagree_on"
+             (click)="privacyDisagreeToggle($event)"
+             [ngClass]="{selected_big: privacyDisagreeButton === true, unSelected_big: privacyDisagreeButton === false}">Only Me</div>
+        <div class="popups_settings_toggle_off"
+             id="privacy_disagree_off"
+             (click)="privacyDisagreeToggle($event)"
+             [ngClass]="{selected_big: privacyDisagreeButton === false, unSelected_big: privacyDisagreeButton === true}">Everyone</div>
+      </div>
+
+      <div class="popups_settings_notifications_line2">Who can see my Attending?</div>
+      <div class="popups_settings_toggle_big right">
+        <div class="popups_settings_toggle_on"
+             id="privacy_attending_on"
+             (click)="privacyAttendingToggle($event)"
+             [ngClass]="{selected_big: privacyAttendingButton === true, unSelected_big: privacyAttendingButton === false}">Only Me</div>
+        <div class="popups_settings_toggle_off"
+             id="privacy_attending_off"
+             (click)="privacyAttendingToggle($event)"
+             [ngClass]="{selected_big: privacyAttendingButton === false, unSelected_big: privacyAttendingButton === true}">Everyone</div>
+      </div>
+
+      <div class="popups_settings_notifications_line2">Who can see my Reviews?</div>
+      <div class="popups_settings_toggle_big right">
+        <div class="popups_settings_toggle_on"
+             id="privacy_reviews_on"
+             (click)="privacyReviewsToggle($event)"
+             [ngClass]="{selected_big: privacyReviewsButton === true, unSelected_big: privacyReviewsButton === false}">Only Me</div>
+        <div class="popups_settings_toggle_off"
+             id="privacy_reviews_off"
+             (click)="privacyReviewsToggle($event)"
+             [ngClass]="{selected_big: privacyReviewsButton === false, unSelected_big: privacyReviewsButton === true}">Everyone</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+
+<div class="mobile_feedback_page" [ngStyle]="{display: feedbackStatus === true ? 'block' : 'none'}">
+<div class="mobile_feedback_header">
+  <img src="../../../../assets/images/back_arrow.png" height="20" width="10"
+       class="mobile_feedback_header_back"
+      (click)="goBack()">
+  <div class="mobile_feedback_header_title">Feedback</div>
+</div>
+  <div class="popups_feedback_main_container">
+    <div class="popups_feedback_on">Feedback On</div>
+    <div class="popups_feedback_here" contenteditable="true">Feedback Here</div>
+    <div class="popups_feedback_send">Send Feedback</div>
+    <div class="popups_feedback_text">We are really thankful for your support.
+      We make it our aim to provide you with the best of things we can.
+      <br>
+      -Neel Shah (Founder)
+    </div>
+  </div>
+</div>

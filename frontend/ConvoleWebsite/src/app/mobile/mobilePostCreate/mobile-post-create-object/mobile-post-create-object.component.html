@@ -1,0 +1,46 @@
+<div class="mobile_post_create_page" [ngStyle]="{display: postCreateStatus === true ? 'block' : 'none'}">
+  <div class="mobile_post_create_header">
+    <img src="../../../../assets/images/back_arrow.png" height="20" width="10"
+         class="mobile_post_create_header_back"
+         (click)="goBack()">
+    <div class="mobile_post_create_header_title">Post Create- Object</div>
+  </div>
+  <div class="post_create_link_container">
+    <div class="post_create_discussion_title input_div_post_create" contenteditable="true" placeholder="Name"></div>
+    <div class="post_create_discussion_tags input_div_post_create" contenteditable="true" placeholder="Affiliated links"></div>
+    <div class="post_create_discussion_description input_div_post_create" contenteditable="true" placeholder="Description"></div>
+    <div class="post_create_discussion_image input_div_post_create" contenteditable="true" placeholder="Upload Image (optional)"></div>
+    <div class="post_create_discussion_tags input_div_post_create" contenteditable="true" placeholder="Some related tags"></div>
+    <label>
+      <select class="community_dropdown" (change)="communitySelected($event)">
+        <option>Select a community</option>
+        <option *ngFor="let community of communityList"
+                value="{{community.community.id}}">{{ community.community.name }}</option>
+      </select>
+    </label>
+    <label>
+      <select class="community_dropdown">
+        <option>Select a column</option>
+        <option *ngFor="let column of columnsList"
+                value="{{column.id}}">{{ column.name }}</option>
+      </select>
+    </label>
+    <div class="post_create_add_comment_radio">
+      <form>
+        <label class="radio"><input type="radio" class="radio_input" name="optionGreat"> Great </label>
+        <label class="radio"><input type="radio" class="radio_input" name="optionGreat"> Good </label>
+        <label class="radio"><input type="radio" class="radio_input" name="optionGreat"> Neutral</label>
+        <label class="radio"><input type="radio" class="radio_input" name="optionGreat"> Bad</label>
+        <label class="radio"><input type="radio" class="radio_input" name="optionGreat"> Worse</label>
+      </form>
+    </div>
+    <div class="post_create_object_review input_div_post_create" contenteditable="true" placeholder="Your review"></div>
+    <div class="post_create_discussion_submit">Submit Link</div>
+    <div class="post_create_link_text">
+      <div class="post_create_link_text_title">Guidelines for link submission: </div>
+      <div class="post_create_link_text_line">1. Should not contain abuses.</div>
+      <div class="post_create_link_text_line">2. Should not promote any unethical things.</div>
+      <div class="post_create_link_text_line">3. Should follow column submission rules.</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="body_top_main">
+  <div class="body_top_main_left left">
+    <div class="top_button left"
+         id="Hot"
+         (click)="onButtonClick($event)"
+         [ngClass]="{body_top_selected: selected === 'Hot', body_top_unselected: selected !== 'Hot'}">
+      Hot
+    </div>
+    <div class="top_button left"
+         id="New"
+         (click)="onButtonClick($event)"
+         [ngClass]="{body_top_selected: selected === 'New', body_top_unselected: selected !== 'New'}">
+      New
+    </div>
+    <div class="top_button left"
+         id="Top"
+         (click)="onButtonClick($event)"
+         [ngClass]="{body_top_selected: selected === 'Top', body_top_unselected: selected !== 'Top'}">
+      Top
+    </div>
+  </div>
+  <label>
+    <select class="date_dropdown" (change)="dateSelected($event)">
+      <option value="BoT">Beginning of Time</option>
+      <option value="1 Day">1 Day</option>
+      <option value="1 Week">1 Week</option>
+      <option value="1 Month">1 Month</option>
+      <option value="1 Year">1 Year</option>
+    </select>
+  </label>
+  <div class="submit_link right"
+       (click)="mySavedClicked()"
+       *ngIf="!routeName.includes('@') && !routeName.includes('home')"
+       [ngClass]="{body_top_selected: selected === 'Saved', body_top_unselected: selected !== 'Saved'}">
+    <span class="submit_link_text">My Saved</span>
+  </div>
+</div>

@@ -1,0 +1,132 @@
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    rgb(153, 152, 152);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    rgb(153, 152, 152);
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    rgb(153, 152, 152);
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:    rgb(153, 152, 152);
+}
+:-ms-input-placeholder { /* Microsoft Edge */
+  color:    rgb(153, 152, 152);
+}
+
+
+
+.communities_selection_full{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(54, 54, 54, 0.588);
+  z-index: 100;
+}
+
+
+
+.popups_communities_selection_main_container{
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 187.5px 62.5px rgba(11, 28, 61, 0.24);
+  width: 800px;
+  height: 580px;
+  z-index: 4;
+  position: fixed;
+  left: calc(50% - 400px);
+  top: 20px;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.popups_alert_main_container_top{
+  height: 50px;
+  width: 100%;
+}
+
+.popups_alert_main_container_top_left{
+  width: 300px;
+  float: left;
+  height: 50px;
+}
+
+.popups_alert_main_container_top_left_title{
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(76, 137, 252);
+  font-weight: 600;
+}
+
+.popups_alert_main_container_top_left_text{
+  font-size: 10px;
+  font-family: "Roboto";
+  color: rgb(106, 104, 104);
+  margin-top: 5px;
+}
+
+
+.popups_alert_main_container_top_right{
+  width: 130px;
+  float: right;
+  height: 50px;
+}
+
+
+.popups_alert_main_container_top_right_button{
+  border-radius: 3px;
+  background-color: rgb(76, 137, 252);
+  width: 110px;
+  height: 27px;
+  font-size: 12px;
+  font-family: "Roboto-Light";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 27px;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+}
+
+.popups_alert_main_container_top_right_text{
+  font-size: 10px;
+  font-family: "Roboto";
+  color: rgb(106, 104, 104);
+  margin-top: 5px;
+  float: right;
+}
+
+.searchbar_communities{
+  width: 680px;
+  margin-top: 20px;
+  height: 30px;
+  position: absolute;
+  box-shadow: 0px 0px 30px 5px rgba(11, 28, 61, 0.14);
+}
+
+#searchbar_communities_input{
+  width: 660px;
+  height: 30px;
+  border-radius: 2px;
+  border: none;
+  background-color: #ffffff;
+  position: relative;
+  margin: auto;
+  padding: 2px 10px 2px 10px;
+  font-size: 22px;
+  font-family: "JosefinSans";
+  color: rgb(194, 194, 194);
+  line-height: 1.2;
+}
+
+.communities_selection_communities{
+  width: 700px;
+  margin-top: 80px;
+  height: auto;
+  position: absolute;
+  margin-left: -5px;
+}

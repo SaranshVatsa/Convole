@@ -1,0 +1,30 @@
+<app-body-link-unit
+    class="linkUnit"
+    [post]="post"
+    [communityName]="communityName"
+    [userAndPostData]="postAndUserData"
+    [render]="postType === 1"
+></app-body-link-unit>
+<app-body-discussion-unit
+    id="discussionUnit"
+    [post]="post"
+    [communityName]="communityName"
+    [userAndPostData]="postAndUserData"
+    [render]="postType === 6"></app-body-discussion-unit>
+<app-body-event-unit
+    id="eventUnit"
+    [post]="post"
+    [communityName]="communityName"
+    [userAndPostData]="postAndUserData"
+    [render]="postType === 4"></app-body-event-unit>
+<app-body-object-unit
+    id="objectUnit"
+    [post]="post"
+    [communityName]="communityName"
+    [userAndPostData]="postAndUserData"
+    [render]="postType === 5"></app-body-object-unit>
+<app-body-image-unit
+    [post]="post"
+    [communityName]="communityName"
+    [userAndPostData]="postAndUserData"
+    [render]="postType === 2"></app-body-image-unit>

@@ -1,0 +1,17 @@
+.mobile_right_container{
+  width: 100%;
+  height: auto;
+  padding: 20px 15px 20px 20px;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}

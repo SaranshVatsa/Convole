@@ -1,0 +1,11 @@
+.image_unit_pic{
+  height: 210px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #4c89fc;
+  margin-top: 10px;
+}
+
+.activity_selected {
+  font-weight: bold;
+}

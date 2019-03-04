@@ -1,0 +1,172 @@
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+
+.link_unit_container{
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+  padding-left: 3px;
+  cursor: pointer;
+}
+
+.link_unit_content_sharedBy{
+  font-size: 12px;
+  font-family: Roboto-Light;
+  margin-top: 5px;
+  display: inline;
+}
+
+.link_unit_sharedBy_name{
+  display: inline;
+}
+.link_unit_content{
+  width: 70%;
+  padding: 5px 10px;
+  font-size: 11px;
+  color: rgb(100, 100, 100);
+  line-height: 1.2;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.link_unit_content_title{
+  font-size: 19px;
+  color: rgb(40, 40, 40);
+  line-height: 1.2;
+  margin-top: 5px;
+}
+
+.link_unit_content_body{
+  font-size: 13px;
+  color: rgb(40, 40, 40);
+  margin-top: 10px;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+  font-family: Roboto-Light;
+}
+
+.link_unit_date_time{
+  position: absolute;
+  bottom: 38px;
+  width: 98%;
+  font-size: 12px;
+}
+
+.link_unit_date{
+  margin-left: 5px;
+}
+
+.link_unit_time{
+  margin-right: 10px;
+}
+
+.link_unit_footer{
+  height: 30px;
+  width: 98%;
+  position: absolute;
+  bottom: 5px;
+  padding-left: 5px;
+}
+
+.link_unit_like{
+  width: 70px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: calc((100% - 270px)/4);
+  cursor: pointer;
+}
+
+.link_unit_like_text{
+  font-size: 14px;
+  color: rgb(104, 154, 249);
+  line-height: 1.2;
+}
+
+.like_icon{
+  margin-bottom: -4px;
+}
+
+.link_unit_save{
+  width: 75px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: calc((100% - 270px)/4);
+  cursor: pointer;
+}
+
+.link_unit_share{
+  width: 80px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: calc((100% - 270px)/4);
+  cursor: pointer;
+}
+
+.link_unit_report{
+  width: 85px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.link_unit_pic{
+  height: 100%;
+  width: 30%;
+  background-color: #4c89fc;
+  border-radius: 0 6px 6px 0;
+}
+
+.activity_selected {
+  font-weight: bold;
+}
+
+.share_tooltip{
+  position: absolute;
+  box-shadow: 0 3px 3px 0 rgba(119, 119, 119, 0.07);
+  width: 140px;
+  height: 40px;
+  top: 25px;
+  right: 105px;
+  background-color: #ffffff;
+  z-index: 100;
+  box-sizing: border-box;
+  padding: 7.5px 15px;
+}
+
+.right_share_twitter{
+  width: 35px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.right_share_facebook{
+  width: 35px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.right_share_google{
+  width: 35px;
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+}

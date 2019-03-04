@@ -1,0 +1,16 @@
+<div class="sidebar_following_container" *ngIf="dataReceived">
+  <div class="sidebar_communities_container_title">FOLLOWING</div>
+  <div class="sidebar_communities_line" *ngFor="let user of userFollowingData" routerLink="/@{{user.following.username}}">
+    <div class="sidebar_communities_circle left"></div>
+    <span class="sidebar_text left">{{ user.following.first_name }} {{ user.following.last_name}}</span>
+  </div>
+  <div class="sidebar_home_top_line">
+    <img src="../../../../assets/images/add_icon.png" height="17" width="18" class="add_more_icon">
+    <span class="sidebar_text">Find Friends</span>
+  </div>
+</div>
+
+<div class="sidebar_following_container" *ngIf="!dataReceived">
+  <div class="sidebar_communities_container_title">FOLLOWING</div>
+  <app-sidebar-list-loader></app-sidebar-list-loader>
+</div>

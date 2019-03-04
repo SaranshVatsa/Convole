@@ -1,0 +1,68 @@
+@font-face {
+  font-family: JosefinSans;
+  src: url('../../../../../../../../../design main/Fonts/Josefin_Sans/JosefinSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url('../../../../../../../../../design main/Fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+
+.sidebar_top_profile{
+  width: 100%;
+  height: 90px;
+  margin-bottom: 40px;
+}
+
+.sidebar_top_communities_image{
+  height: 90px;
+  width: 90px;
+  border-radius: 2px;
+  background-color: rgb(76, 137, 252);
+  float: left
+}
+
+.sidebar_top_communities_right{
+  width: 55%;
+  height: 80px;
+  float: left;
+  padding: 5px 0 5px 20px;
+}
+
+.sidebar_top_profile_title{
+  font-size: 16px;
+  font-family: "Roboto-Medium";
+  color: rgb(50, 50, 50);
+  text-align: left;
+  width: 100%;
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+}
+
+.sidebar_top_profile_info{
+  font-size: 10px;
+  font-family: "Roboto-Light";
+  color: rgb(114, 114, 114);
+  margin-top: 5px;
+  text-align: left;
+}
+
+.sidebar_top_communities_follow{
+  border-radius: 3px;
+  background-color: rgb(76, 137, 252);
+  width: 65px;
+  height: 20px;
+  font-size: 10px;
+  font-family: "Roboto-Light";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 15px;
+}

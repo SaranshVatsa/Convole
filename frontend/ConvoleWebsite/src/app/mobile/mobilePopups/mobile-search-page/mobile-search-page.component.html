@@ -1,0 +1,21 @@
+<div class="mobile_feedback_page" [ngStyle]="{display: searchStatus === true ? 'block' : 'none'}">
+  <div class="mobile_feedback_header">
+    <img src="../../../../assets/images/back_arrow.png" height="20" width="10"
+         class="mobile_feedback_header_back"
+         (click)="goBack()">
+    <div class="searchbar_navbar left">
+      <form class="search" method="post" action="#">
+        <input type="text" id="searchbar_navbar_input" placeholder="Search(Communities, Posts, Profile)">
+        <label for="searchbar_navbar_input"></label>
+      </form>
+    </div>
+    <img src="../../../../assets/images/close_icon.png" height="15" width="15"
+         class="mobile_search_cancel">
+  </div>
+  <div class="popups_search_main_container">
+    <app-mobile-link-unit></app-mobile-link-unit>
+    <app-mobile-discussion-unit></app-mobile-discussion-unit>
+    <app-mobile-contributions-unit></app-mobile-contributions-unit>
+    <app-mobile-image-unit></app-mobile-image-unit>
+  </div>
+</div>

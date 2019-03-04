@@ -1,0 +1,50 @@
+.left{
+  float: left;
+}
+
+.sidebar_following_container{
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+}
+
+.sidebar_communities_container_title{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(138, 137, 137);
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-left: -5px;
+}
+
+.sidebar_communities_line{
+  width: 100%;
+  height: 30px;
+  padding: 2px 5px 2px 0;
+  box-sizing: border-box;
+}
+
+
+.sidebar_text{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(80, 80, 80);
+  cursor: pointer;
+}
+
+.sidebar_communities_circle{
+  border-radius: 50%;
+  background-color: rgb(76, 137, 252);
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.add_more_icon{
+  margin-right: 12px;
+  margin-bottom: -2px;
+  cursor: pointer;
+}
+

@@ -1,0 +1,16 @@
+<div class="sidebar_top_profile" *ngIf="firstName">
+  <div class="sidebar_top_profile_image">
+  </div>
+  <div class="sidebar_top_profile_title">
+    {{ firstName }} {{ lastName }}
+  </div>
+  <div class="sidebar_top_profile_info">
+    @{{ username }}
+  </div>
+  <div class="sidebar_top_profile_follow" (click)="followButtonClicked()"
+       *ngIf="following == false && username !== userLoggedIn">Follow</div>
+  <div class="sidebar_top_profile_follow" (click)="followButtonClicked()"
+       *ngIf="following == true && username !== userLoggedIn">Unfollow</div>
+</div>
+
+<app-sidebar-top-loader *ngIf="!firstName"></app-sidebar-top-loader>

@@ -1,0 +1,12 @@
+<div class="discover_communities_container">
+  <div class="discover_communities_title">
+    Discover Communities
+  </div>
+  <div>
+  <!--<app-discover-communities-card-double></app-discover-communities-card-double>-->
+  <app-discover-communities-card
+      *ngFor="let comm of disCommData"
+      [commData]="comm"
+      routerLink="/{{comm.url}}/all"></app-discover-communities-card>
+  </div>
+</div>

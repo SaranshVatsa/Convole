@@ -1,0 +1,12 @@
+.right_columns_description{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.right_columns_description_title{
+  font-size: 16.8px;
+  font-family: "Roboto-Medium";
+  color: rgb(79, 77, 77);
+  line-height: 1.2;
+}

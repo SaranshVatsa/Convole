@@ -1,0 +1,49 @@
+<div class="mobile_feedback_page" [ngStyle]="{display: loginStatus === true ? 'block' : 'none'}">
+  <div class="mobile_feedback_header">
+    <img src="../../../../assets/images/back_arrow.png" height="20" width="10"
+         class="mobile_feedback_header_back"
+         (click)="goBack()">
+    <div class="mobile_login_header_title">Login / SignUp</div>
+  </div>
+  <div class="popups_login_main_container">
+    <div class="popups_login_sub_heading">Sign-In/Login with your favourite social media</div>
+    <div class="popups_login_facebook">
+      <div class="popups_login_facebook_left">
+        <img src="../../../assets/images/facebook_full.png" width="25" height="25">
+      </div>
+      <div class="popups_login_facebook_right">
+        <div class="popups_login_facebook_right_line1">Continue with Facebook</div>
+        <div class="popups_login_facebook_right_line2">We won't post without your permission</div>
+      </div>
+    </div>
+    <div class="popups_login_twitter">
+      <div class="popups_login_twitter_left">
+        <img src="../../../assets/images/twitter_full.png" width="25" height="20">
+      </div>
+      <div class="popups_login_twitter_right">
+        <div class="popups_login_twitter_right_line1">Continue with Twitter</div>
+        <div class="popups_login_twitter_right_line2">We won't post without your permission</div>
+      </div>
+    </div>
+    <div class="popups_login_gplus">
+      <div class="popups_login_gplus_left">
+        <img src="../../../assets/images/google_plus_full.png" width="25" height="16">
+      </div>
+      <div class="popups_login_gplus_right">
+        <div class="popups_login_gplus_right_line1">Continue with Google Plus</div>
+        <div class="popups_login_gplus_right_line2">We won't post without your permission</div>
+      </div>
+    </div>
+    <div class="popups_login_text_line">Login is important for us to help you stay in touch with your communities.
+    </div>
+    <div class="popups_login_text_line">
+      We save your preferences and activity to recommend you other useful and important information.
+    </div>
+    <div class="popups_login_text_line">
+      We won't sell your data.
+    </div>
+    <div class="popups_login_text_line">
+      Read more about this in <span class="privacy_policies">Privacy Policies</span>.
+    </div>
+  </div>
+</div>

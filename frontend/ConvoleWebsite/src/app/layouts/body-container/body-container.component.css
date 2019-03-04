@@ -1,0 +1,118 @@
+
+.full_container{
+  height: auto;
+  position: absolute;
+  left: 222px;
+  box-sizing: border-box;
+  background-color: #f7faff;
+  width: calc(100% - 214px);
+  min-width: 1100px;
+  font-family: Roboto-Regular;
+  min-height: 150vh;
+}
+
+.body_container{
+  height: auto;
+  max-width: 900px;
+  width: 70%;
+  /*position: absolute;*/
+  /*left: 230px;*/
+  margin-top: 60px;
+  padding: 5px 25px 40px 50px;
+  box-sizing: border-box;
+}
+
+/*@media all and (min-width: 1350px) and (max-width: 1600px){*/
+  /*.full_container{*/
+    /*width: 85%;*/
+  /*}*/
+/*}*/
+
+
+@media all and (min-width: 1600px){
+  .body_container{
+    margin-left: calc(50% - 600px);
+  }
+  .full_container{
+    left: calc(222px + 5%);
+    width: calc(95% - 214px);
+  }
+}
+
+/*@media all and (max-width: 1533px) {*/
+  /*.full_container{*/
+    /*left: 222px;*/
+    /*width: calc(100% - 214px);*/
+    /*box-sizing: border-box;*/
+    /*background-color: #f7faff;*/
+    /*height: auto;*/
+    /*position: absolute;*/
+  /*}*/
+/*}*/
+
+/*@media all and (min-width: 1450px) {*/
+  /*.body_container{*/
+    /*margin-left: 5%;*/
+    /*width: 1000px;*/
+  /*}*/
+/*}*/
+
+/*@media all and (min-width: 1650px) {*/
+  /*.body_container{*/
+    /*margin-left: 10%;*/
+  /*}*/
+/*}*/
+
+/*@media all and (min-width: 2000px) {*/
+  /*.full_container{*/
+    /*left: 300px;*/
+  /*}*/
+/*}*/
+
+.show_more{
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(104, 154, 249);
+  line-height: 1.2;
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.add_post_button{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #689af9;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.add_post_options{
+  height: 200px;
+  width: 40px;
+  background-color: #ffffff;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+}
+
+.add_post_option_single{
+  display: block;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+}

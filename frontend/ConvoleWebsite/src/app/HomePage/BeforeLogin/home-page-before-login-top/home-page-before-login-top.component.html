@@ -1,0 +1,60 @@
+<app-popups-login [(loginStatus)]="loginPopupStatus"></app-popups-login>
+<div class="main_container">
+  <img class="top_container" src="../../../../assets/images/home_background.png">
+  <div class="background_image_container" (click)="suggestionsClose()">
+  </div>
+  <div class="header_before">
+    <div class="left">
+      <img src=" ../../../../assets/images/convole_logo.png" class="convole_logo left"/>
+      <span class="convole_title right">Convole</span>
+    </div>
+    <div class="header_before_right right">
+      <span class="login left" (click)="openLoginPopup()">Login</span>
+      <span class="signup right" (click)="openLoginPopup()">Sign Up</span>
+    </div>
+  </div>
+  <div class="container_body">
+    <div class="container_text_center">
+      Join the Community,
+      Access the best of Web
+    </div>
+    <div class="container_searchbar">
+      <form class="search" method="post" action="#">
+        <input type="text" id="search_bar_input" placeholder="Search Your Hobbies" (click)="displaySuggestions()">
+        <label for="search_bar_input"></label>
+        <ul class="results" [hidden]="suggestionsStatus">
+          <li><a href=""><div class="suggestions_image left"></div><span class="left suggestions_text">Dance</span></a></li>
+          <br>
+          <li><a href=""><div class="suggestions_image left"></div><span class="left suggestions_text">Dance</span> </a></li>
+          <br>
+          <li><a href=""><div class="suggestions_image left"></div><span class="left suggestions_text">Dance</span> </a></li>
+          <br>
+          <li><a href=""><div class="suggestions_image left"></div><span class="left suggestions_text">Dance</span> </a></li>
+        </ul>
+      </form>
+      <span class="example_search">Ex. Football, Music, Sketching, Electric Cars... </span>
+    </div>
+
+  </div>
+  <div class="down_arrow_container">
+    <div class="down_arrow bounce">
+      <a href="#home_page_bottom">
+      <img src="../../../../assets/images/down_arrow.png" height="25" width="66">
+      </a>
+    </div>
+  </div>
+  <div>
+    <div class="container_bottom ">
+    <div class="left">
+      <span class="left">Privacy Policy .</span>
+      <span class="right">Terms Of Service</span>
+    </div>
+    <div class="right">
+      <span class="left">About .</span>
+      <span class="right">Credits</span>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div id="home_page_bottom" style="position: absolute; bottom: 0;"></div>

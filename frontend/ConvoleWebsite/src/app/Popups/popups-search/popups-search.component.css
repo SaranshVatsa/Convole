@@ -1,0 +1,24 @@
+.popups_search_container{
+  border-radius: 0 0 7px 7px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px 3px 3px rgba(180, 180, 180, 0.07);
+  width: 500px;
+  height: 200px;
+  z-index: 4;
+  position: fixed;
+  left: 230px;
+  top: 44px;
+  padding-top: 10px;
+}
+
+@media all and (min-width: 1600px) and (max-width: 2200px){
+  .popups_search_container{
+    left: calc( 230px + 5%);
+  }
+}
+
+@media all and (min-width: 2200px){
+  .popups_search_container{
+    left: 330px;
+  }
+}

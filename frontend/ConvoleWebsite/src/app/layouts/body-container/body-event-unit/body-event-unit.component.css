@@ -1,0 +1,70 @@
+.event_unit_content_title{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.event_unit_loc{
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 63px;
+}
+
+.event_unit_time{
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 40px;
+  padding-left: 2px;
+}
+
+.event_unit_attending{
+  margin-left: 5px;
+  width: 110px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: calc( (100% - 325px)/2);
+  cursor: pointer;
+}
+
+.event_unit_share{
+  margin-left: 5px;
+  width: 80px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: calc( (100% - 325px)/2);
+  cursor: pointer;
+}
+
+.event_unit_report{
+  margin-left: 5px;
+  width: 100px;
+  height: 30px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.activity_selected{
+  font-weight: bold;
+}
+
+.share_tooltip_object{
+  position: absolute;
+  box-shadow: 0 3px 3px 0 rgba(119, 119, 119, 0.07);
+  width: 140px;
+  height: 40px;
+  top: 25px;
+  right: 170px;
+  background-color: #ffffff;
+  z-index: 100;
+  box-sizing: border-box;
+  padding: 7.5px 15px;
+}

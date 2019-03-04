@@ -1,0 +1,109 @@
+.header_container{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  /*box-shadow: 0px 7px 8px 0px #e6e8ed;*/
+  z-index: 50;
+}
+
+
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    rgb(153, 152, 152);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    rgb(153, 152, 152);
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    rgb(153, 152, 152);
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:    rgb(153, 152, 152);
+}
+:-ms-input-placeholder { /* Microsoft Edge */
+  color:    rgb(153, 152, 152);
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.logo_navbar{
+  height: 22px;
+  width: 22px;
+  margin: 10px 0 0 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar_title{
+  font-family: "JosefinSans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 12px 0 0 5px;
+  font-size: 16px;
+  color: #4c89fc;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar_beta {
+  font-size: 9px;
+  font-family: "JosefinSans";
+  color: rgb(168, 167, 167);
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar_right{
+  width: 70px;
+  height: 32px;
+  margin-right: 10px;
+  margin-top: 8px;
+  user-select: none;
+}
+.notificationIconNavbar{
+  margin-top: 5px;
+  cursor: pointer;
+  margin-right: 7px;
+}
+.navbar_profile_pic{
+  width: 25px;
+  height: 25px;
+  background-color: #4c89fc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.navbar_right_button {
+  border-radius: 3px;
+  background-color: rgb(76, 137, 252);
+  width: 85px;
+  height: 25px;
+  margin-top: 8px;
+  font-size: 12px;
+  font-family: "Roboto-Light";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  user-select: none;
+}

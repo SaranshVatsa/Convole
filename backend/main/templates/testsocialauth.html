@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div style="text-align: center;padding-top: 7%;">
+		{% if user and not user.is_anonymous %}
+
+		<h1>Welcome to Convole</h1>
+		<h4>This page is similar to convole.com/ after login</h4>
+		<h4>id: {{ user.id }}<br />{{ user.email }}<br />{{ user.username }}</h4>
+		<br />
+		<a href="http://localhost:8000/api/v1/">API Dashboard</a>
+		<br />
+		<br />
+		<a href="http://localhost:8000/api/v1/docs/">Documentation</a>
+		<br />
+		<br />
+		<a href="http://localhost:8000/admin/">Admin Panel</a>
+		<br />
+		<br />
+		<br />
+		<a href="{% url 'auth:logout' %}?next=/social_networks">
+			Log out
+		</a>
+
+		</div>
+		{% else %}
+		<h1>Welcome to Convole</h1>
+		<h4>This page is similar to convole.com/</h4>
+
+		<a href="http://localhost:8000/admin/">Login to Admin Panel</a>
+		<br />
+		<br />
+		<a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login with facebook</a>
+		{% endif %}
+	</div>
+</body>
+</html>

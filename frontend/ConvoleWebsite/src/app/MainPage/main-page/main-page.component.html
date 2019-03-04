@@ -1,0 +1,3 @@
+<app-home-page-after-login *ngIf="routeName.includes('home')"></app-home-page-after-login>
+<app-communities-page *ngIf="!routeName.includes('@') && !routeName.includes('home')"></app-communities-page>
+<app-profile-page *ngIf="routeName.includes('@')"></app-profile-page>

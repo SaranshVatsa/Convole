@@ -1,0 +1,47 @@
+.post_create_object_container{
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  height: auto;
+  z-index: 100;
+  position: absolute;
+  left: calc(50% - 360px);
+  padding: 30px 50px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.post_create_add_comment_radio{
+  width: 100%;
+}
+.radio{
+  margin-top: 20px;
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(84, 84, 84);
+  display: inline-block;
+  line-height: 15px;
+  margin-right: 15px;
+}
+
+input[type=radio]{
+  margin-bottom: -2px;
+  vertical-align: middle;
+}
+
+.radio_input{
+  line-height: 12px;
+  margin-top: -5px;
+}
+
+.post_create_object_review{
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: "Roboto-Bold";
+  color: rgb(175, 175, 175);
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 0.8px;
+  min-height: 50px;
+  height: auto;
+}

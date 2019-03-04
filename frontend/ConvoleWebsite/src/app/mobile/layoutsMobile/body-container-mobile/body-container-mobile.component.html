@@ -1,0 +1,17 @@
+<div class="body_container_mobile" (click)="closePopups($event)">
+  <app-mobile-body-top-home></app-mobile-body-top-home>
+  <app-mobile-common-unit
+      *ngFor="let post of postData"
+      [post]="post"
+      [postAndUserData]="postAndUserData"
+      [communityName]="communityName"
+      (click)="unitClicked(post)"></app-mobile-common-unit>
+  <!--<app-mobile-contributions-unit></app-mobile-contributions-unit>-->
+  <div class="add_post_button_mobile" id="add_post_button" (click)="showPostCreateOptions()" [@rotatedState]='state'>+</div>
+  <div class="add_post_options_mobile" *ngIf="postCreateOptionsStatus == true">
+    <div class="add_post_option_single_mobile" id="add_post_options_link" (click)="openPostCreate($event)">L</div>
+    <div class="add_post_option_single_mobile" id="add_post_options_discussion" (click)="openPostCreate($event)">D</div>
+    <div class="add_post_option_single_mobile" id="add_post_options_event" (click)="openPostCreate($event)">E</div>
+    <div class="add_post_option_single_mobile" id="add_post_options_object" (click)="openPostCreate($event)">O</div>
+  </div>
+</div>

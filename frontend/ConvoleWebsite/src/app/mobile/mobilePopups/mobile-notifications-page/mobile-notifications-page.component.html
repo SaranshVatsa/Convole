@@ -1,0 +1,14 @@
+<div class="mobile_feedback_page" [ngStyle]="{display: notificationStatus === true ? 'block' : 'none'}">
+  <div class="mobile_feedback_header">
+    <img src="../../../../assets/images/back_arrow.png" height="20" width="10"
+         class="mobile_feedback_header_back"
+         (click)="goBack()">
+    <div class="mobile_feedback_header_title">Notifications</div>
+  </div>
+  <div class="mobile_notifications_body">
+    <app-mobile-notification-unit></app-mobile-notification-unit>
+    <app-mobile-notification-unit></app-mobile-notification-unit>
+    <app-mobile-notification-unit></app-mobile-notification-unit>
+    <app-mobile-notification-unit></app-mobile-notification-unit>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+
+<div class="mobile_feedback_page" [ngStyle]="{display: communitySelectionStatus === true ? 'block' : 'none'}">
+  <div class="mobile_feedback_header">
+    <div class="popups_alert_main_container_top_left">
+      <div class="popups_alert_main_container_top_left_title">
+        Pick Your Communities
+      </div>
+      <div class="popups_alert_main_container_top_left_text">
+        Choose communities based on your interest
+      </div>
+    </div>
+    <div class="popups_alert_main_container_top_right">
+      <div class="popups_alert_main_container_top_right_button">
+        Save & Continue
+      </div>
+    </div>
+  </div>
+  <div class="searchbar_communities">
+    <form class="search" method="post" action="#">
+      <input type="text" id="searchbar_communities_input" placeholder="Search Communities">
+      <label for="searchbar_communities_input"></label>
+    </form>
+  </div>
+  <div class="communities_selection_communities">
+    <app-communities-selection-communities-unit></app-communities-selection-communities-unit>
+    <app-communities-selection-communities-unit></app-communities-selection-communities-unit>
+    <app-communities-selection-communities-unit></app-communities-selection-communities-unit>
+    <app-communities-selection-communities-unit></app-communities-selection-communities-unit>
+    <app-communities-selection-communities-unit></app-communities-selection-communities-unit>
+    <app-communities-selection-communities-unit></app-communities-selection-communities-unit>
+    <app-communities-selection-communities-unit></app-communities-selection-communities-unit>
+    <app-communities-selection-communities-unit></app-communities-selection-communities-unit>
+
+  </div>
+</div>
